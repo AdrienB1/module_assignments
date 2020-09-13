@@ -1,0 +1,66 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+}
+
+.tleft {
+    background-color: steelblue;
+    height: 40vh;
+    width: 30vw;
+    position: fixed;
+    left: 0;
+}
+
+.tmid {
+    background-color: yellow;
+    height: 40vh;
+    width: 20vh;
+    position: fixed;
+    left: 30vw;
+    top: 0;
+}
+
+.tright {
+    background-color: steelblue;
+    height: 40vh;
+    width: 100vw;
+}
+
+.mid {
+    background-color: yellow;
+    height: 20vh;
+}
+
+.bleft {
+    background-color: steelblue;
+    height: 40vh;
+    width: 30vw;
+    position: fixed;
+    bottom: 0;
+    left: 0%;
+}
+
+.bmid {
+    background-color: yellow;
+    height: 40vh;
+    width: 20vh;
+    position: fixed;
+    left: 30vw;
+    bottom: 0;
+}
+
+.bright {
+    background-color: steelblue;
+    height: 40vh;
+    width: 100vw;
+}

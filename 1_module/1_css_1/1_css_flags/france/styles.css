@@ -1,0 +1,45 @@
+.left {
+    background-color: blue;
+    height: 97vh;
+    width: 29%;
+    margin: 0;
+    display: inline-block;
+}
+
+.middle {
+    background-color: white;
+    height: 97vh;
+    width: 29%;
+    margin: 0;
+    position: relative;
+    left: 0%;
+    top: 0;
+    display: inline-block;
+    padding: 0;
+}
+
+.right {
+    background-color: red;
+    height: 97vh;
+    width: 29%;
+    margin: 0;
+    position: relative;
+    left: 0%;
+    top: 0;
+    display: inline-block;
+}
+
+.body {
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    padding: 0;
+    margin: 0;
+}
+
+.html {
+    padding: 0;
+    margin: 0;
+}

@@ -1,0 +1,163 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------------- PLUS ---------------- */
+
+.plus {
+    background-color: teal;
+    width: 450px;
+    height: 450px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.p1 {
+    background-color: steelblue;
+    width: 180px;
+    height: 180px;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.p2 {
+    background-color: white;
+    width: 90px;
+    height: 180px;
+    position: fixed;
+    left: 180px;
+}
+
+.p3 {
+    background-color: steelblue;
+    width: 180px;
+    height: 180px;
+    position: fixed;
+    left: 270px;
+    top: 0;
+}
+
+.p4 {
+    background-color: white;
+    height: 90px;
+    width: 450px;
+    position: fixed;
+    left: 0;
+    top: 180px;
+}
+
+.p5 {
+    background-color: steelblue;
+    width: 180px;
+    height: 180px;
+    position: fixed;
+    left: 0;
+    top: 270px;
+}
+
+.p6 {
+    background-color: white;
+    width: 90px;
+    height: 180px;
+    position: fixed;
+    top: 270px;
+    left: 180px;
+}
+
+.p7 {
+    background-color: steelblue;
+    width: 180px;
+    height: 180px;
+    position: relative;
+    top: 270px;
+    left: 270px;
+}
+
+/* ---------------- LEFT TOP ---------------- */
+
+.left-top {
+    background-color: tomato;
+    width: 100vw;
+    height: 450px;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.lt1 {
+    background-color: steelblue;
+    height: 90px;
+    width: 100vw;
+}
+
+.lt2 {
+    background-color: white;
+    height: 90px;
+    width: 100vw;
+}
+
+.lt3 {
+    background-color: steelblue;
+    height: 90px;
+    width: 100vw;
+}
+
+.lt4 {
+    background-color: white;
+    height: 90px;
+    width: 100vw;
+}
+
+.lt5 {
+    background-color: steelblue;
+    height: 90px;
+    width: 100vw;
+}
+
+/* ---------------- LOW ---------------- */
+
+.low {
+    background-color: yellow;
+    height: 360px;
+    width: 100vw;
+    position: fixed;
+    top: 450px;
+}
+
+.l1 {
+    background-color: white;
+    height: 90px;
+    width: 100vw;
+}
+
+.l2 {
+    background-color: steelblue;
+    height: 90px;
+    width: 100vw;
+}
+
+.l3 {
+    background-color: white;
+    height: 90px;
+    width: 100vw;
+}
+
+.l4 {
+    background-color: steelblue;
+    height: 90px;
+    width: 100vw;
+}

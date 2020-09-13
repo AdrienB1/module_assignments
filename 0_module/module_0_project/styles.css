@@ -1,0 +1,244 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* <><><><><><><><><><><> CSS RESET <><><><><><><><><><><> */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* <><><><><><><><><><><> MY STYLES <><><><><><><><><><><> */
+
+/* ////////HEADER//////// */
+
+.name {
+    display: inline-block;
+    width: 200px;
+    height: 25px;
+    padding-left: 25px;
+    font-size: 20px;
+    font-weight: 100;
+    padding-top: 10px;
+}
+
+.title {
+    width: 600px;
+    font-size: 45px;
+    padding-left: 21px;
+    font-weight: 700;
+}
+
+.header_links {
+    position: fixed;
+    height: 50px;
+    right: 25px;
+    top: 25px;
+    bottom: 25px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    font-weight: 400;
+}
+
+.linkspan {
+    margin: auto;
+    padding-right: 30px;
+    padding-left: 30px;
+    color: whitesmoke;
+}
+
+.link {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.link:hover {
+    color: #C09CD9;
+}
+
+.loc {
+    border-bottom: 1px solid whitesmoke;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-image:linear-gradient(to bottom right, #C004D9, #AB05F2, #5A13F2, #2745F2, #1B78F2);
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    color: whitesmoke;
+    border-bottom: 2px solid black;
+}
+
+/* ////////Body//////// */
+
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(https://i.imgur.com/DRoXvj6.png);
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.middle {
+    position: absolute;
+    height: 500px;
+    background-image: linear-gradient(to bottom right, #A6669A, #6B3F8A, #F8B983, #F19482, #EB787B);
+    width: 800px;
+    border-radius: 10px;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.ball-box {
+    background-color: whitesmoke;
+    position: relative;
+    top: 5px;
+    left: 150px;
+    height: 300px;
+    width: 500px;
+    border-radius: 5px;
+}
+
+.ball {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    position: relative;
+    margin: 0;
+    background-color: red;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.ball-info {
+    background-color: lightgrey;
+    position: relative;
+    top: 10px;
+    left: 150px;
+    height: 100px;
+    width: 500px;
+    border-radius: 5px;
+}
+
+.info-window {
+    position: relative;
+    height: 85%;
+    width: 90%;
+    border: 1px solid black;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    top: 7.5%;
+    left: 4.7%;
+}
+
+.button-box {
+    background-color: lightgrey;
+    position: relative;
+    top: 20px;
+    left: 150px;
+    height: 70px;
+    width: 500px;
+    border-radius: 5px;
+}
+
+.bigger {
+width: 100px;
+margin-left: 48px;
+margin-top: 20px;
+height: 30px;
+border-radius: 5px;
+border: 1px solid black;
+}
+
+.smaller {
+width: 100px;
+margin-left: 48px;
+height: 30px;
+border-radius: 5px;
+border: 1px solid black;
+}
+
+.info {
+width: 100px;
+margin-left: 48px;
+height: 30px;
+border-radius:5px;
+border: 1px solid black;
+}
+/* ////////Footer//////// */
+
+.copy {
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+}
+
+.ref {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+
+footer {
+    width: 100%;
+    background-image: linear-gradient(to top right, #404040, #616161, #808080, #A1A1A1);
+    position: fixed;
+    bottom: 0;
+    height: 45px;
+    border-top: 1px solid black;
+}

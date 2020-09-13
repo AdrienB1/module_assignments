@@ -1,0 +1,489 @@
+/* Universal Styles */
+
+html {
+    margin: 0;
+    padding: 0;
+    background-image: url(/images/br-pattern.jpg);
+    background-attachment: fixed;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    margin-top: 210px;
+    margin-bottom: 100px;
+}
+
+div {
+    padding: 0;
+    margin: 0;
+}
+
+/* ---------- Header Small ---------- */
+
+header {
+    border-bottom: 1px solid black;
+    box-shadow: 0 3px 5px 2px dimgrey;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 160px;
+    z-index: 10;
+}
+
+.nav-container {
+    position: fixed;
+    top: 110;
+    height: 50px;
+    width: 100%;
+    background-color: black;
+}
+
+li {
+    font-size: 30px;;
+    color: white;
+    font-family: 'Tangerine', cursive;
+    line-height: 20px;
+    display: inline;
+    padding-left: 0;
+    margin-right: 5px;
+}
+
+
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: red;
+}
+
+a {
+    text-decoration: none;
+}
+
+.big {
+    font-size: 44px;
+    font-weight: 700;
+}
+
+.img-container {
+    height: 100px;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
+
+.logo {
+    height: 90px;
+    width: 270px;
+}
+
+/* ---------- Home Main Small ---------- */
+
+.home-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about {
+    background-color: white;
+    width: 80%;
+    border-radius: 8px;
+    border: 1px solid black;
+    margin-top: 50px;
+}
+
+.featured {
+    background-color: white;
+    width: 80%;
+    margin-top: 50px;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+/* ------------ Footer Universal ------------ */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: #4E4D50;
+    border-top: 1px solid black;
+}
+
+.copy {
+    height: 50px;
+    width: 80%;
+    color: #8C898F;
+}
+
+/* ------------ About Article ------------ */
+
+.about {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.article-object-space {
+    margin: 0 25px;
+}
+.bold {
+    font-weight: 700;
+}
+
+.italic {
+    font-style: italic;
+}
+.article-line-height {
+    line-height: 27px;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 38px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+.description {
+    border: 1px solid black;
+    border-radius: 7px;
+    padding: 8px;
+    margin-top: 50px;
+}
+
+.faq1 {
+    border: 1px solid black;
+    border-radius: 7px;
+    padding: 8px;
+}
+
+.faq2 {
+    border: 1px solid black;
+    border-radius: 7px;
+    padding: 8px;
+}
+
+.faq3 {
+    border: 1px solid black;
+    border-radius: 7px;
+    padding: 8px;
+    margin-bottom: 50px;
+}
+
+/* ------------ Featured Small ------------ */
+
+.featured {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    line-height: 23px;
+}
+
+.featured-description {
+    position: relative;
+    width: 90%;
+}
+
+.master-sword-featured {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 25px 0 25px;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+.elucidator-featured {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 25px;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+.minecraft-featured {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 25px 50px 25px;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+.featured-img-container {
+    width: 200px;
+    height: 200px;
+}
+
+.master-sword-featured-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 7px;
+}
+
+.elucidator-featured-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 7px;
+}
+
+.minecraft-featured-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 7px;
+}
+
+/* ------------ Legal Small ------------ */
+
+.legal-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.legal-container {
+    width: 60%;
+    background-color: white;
+    padding: 25px;
+    margin: 120px 0 70px 0;
+    border: 1px solid black;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+}
+
+.legal-header {
+    font-family: 'Roboto', sans-serif;
+}
+
+.legal-paragraph {
+    position: relative;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    line-height: 30px;
+}
+
+/* ------------ Products Small ------------ */
+
+.product-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-cont {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.prod-img-pad {
+    margin-top: 20px;
+}
+
+.product-image-cont {
+    height: 60%;
+    width: 60%;
+    border-radius: 7px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    background-color: #747474;
+}
+
+.product-image {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 7px 7px 0 0;
+}
+
+.product-label {
+    border-radius: 0 0 7px 7px;
+    background-color: #747474;
+    margin: 0;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    line-height: 30px;
+    text-align: center;
+}
+
+/* ------------ BIG ------------ */
+
+@media only screen and (min-width: 1120px) {
+
+    /* ---------- Header Big ---------- */
+
+    body {
+        margin-top: 225px;
+        margin-bottom: 100px;
+    }
+
+    header {
+        display: flex;
+        border-bottom: 1px solid black;
+        box-shadow: 0 3px 5px 2px dimgrey;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 220px;
+    }
+    
+    .nav-container {
+        position: relative;
+        height: 205px;
+        width: 35%;
+        padding-top: 15px;
+        padding-left: 60px;
+        background-color: black;
+    }
+    
+    li {
+        margin-top: 33px;
+        font-size: 30px;;
+        padding-left: 5px;
+        color: white;
+        font-family: 'Tangerine', cursive;
+        display: block;
+    }
+
+    .big {
+        font-size: 44px;
+        font-weight: 700;
+    }
+    
+    .img-container {
+        height: 200px;
+        width: 65%;
+        padding-top: 15px;
+        border-right: 5px solid black;
+        position: relative;
+        background-color: white;
+    }
+    
+    .logo {
+        height: 200px;
+        width: 600px;
+    }
+
+    /* ---------- Home Main Big ---------- */
+
+    .home-main {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .about {
+        background-color: white;
+        width: 30%;
+        height: 1350px;
+        border-radius: 8px;
+        border: 1px solid black;
+    }
+    
+    .featured {
+        background-color: white;
+        width: 60%;
+        height: 1350px;
+        border-radius: 8px;
+        border: 1px solid black;
+    }
+
+    /* ---------- Products Big ---------- */
+
+    .product-main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .img-cont {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 80%;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 8px;
+        padding: 20px;
+        margin-top: 60px;
+    }
+    
+    .prod-img-pad {
+        margin-top: 0;
+    }
+    
+    .product-image-cont {
+        height: 30%;
+        width: 30%;
+        border-radius: 7px;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+    }
+    
+    .product-image {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        border-radius: 7px 7px 0 0;
+    }
+    
+    .product-label {
+        border-radius: 0 0 7px 7px;
+        background-color: #747474;
+        margin: 0;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        line-height: 30px;
+        text-align: center;
+    }
+
+}
+
+/* ---------- Tiny Screen Fixes ---------- */
+
+@media only screen and (max-width: 300px) {
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}

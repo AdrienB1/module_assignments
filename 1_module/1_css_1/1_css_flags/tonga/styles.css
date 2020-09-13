@@ -1,0 +1,56 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+}
+
+.t-left {
+    background-color: white;
+    height: 50vh;
+    width: 40vw;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+.p-vert {
+    background-color: red;
+    height: 240px;
+    width: 80px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 15;
+}
+
+.p-hori {
+    background-color: red;
+    height: 80px;
+    width: 240px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 15;
+}
+
+.t-right {
+    background-color: red;
+    width: 100vw;
+    height: 100vh;
+}

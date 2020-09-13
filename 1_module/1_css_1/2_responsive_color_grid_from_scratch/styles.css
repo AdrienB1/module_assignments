@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box; 
+    font-size: 0px;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 88%;
+    height: 80vh;
+}
+
+div {
+    border: 9px solid white;
+    height: 160px;
+    display: inline-block;
+}
+
+.one {
+    background-color: #F5C6D6;
+    position: relative;
+    width: 100%;
+}
+
+.two-one {
+    background-color: #EE2E84;
+    position: relative;
+    width: 100%;
+}
+
+.two-two {
+    background-color: #EE2E84;
+        position: relative;
+        width: 100%;
+}
+
+.two-three {
+    background-color: #EE2E84;
+        position: relative;
+        width: 100%;
+}
+
+.two-four {
+    background-color: #EE2E84;
+        position: relative;
+        width: 100%;
+}
+
+.three-one {
+    background-color: #85CFD8;
+        position: relative;
+        width: 100%;
+}
+
+.three-two {
+    background-color: #85CFD8;
+        position: relative;
+        width: 100%;
+}
+
+.four-one {
+    background-color: #8DC63F;
+        position: relative;
+        width: 100%;
+}
+
+.four-two {
+    background-color: #E76E34;
+        position: relative;
+        width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    .one {
+        position: relative;
+        width: 100%;
+    }
+    
+    .two-one {
+        position: relative;
+        width: 25%;
+    }
+    
+    .two-two {
+        position: relative;
+        width: 25%;
+    }
+    
+    .two-three {
+        position: relative;
+        width: 25%;
+    }
+    
+    .two-four {
+        position: relative;
+        width: 25%;
+    }
+    
+    .three-one {
+        position: relative;
+        width: 50%;
+    }
+    
+    .three-two {
+        position: relative;
+        width: 50%;
+    }
+    
+    .four-one {
+        position: relative;
+        width: 75%;
+    }
+    
+    .four-two {
+        position: relative;
+        width: 25%;
+    }
+}

@@ -1,0 +1,40 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+
+.top {
+    background-color: red;
+    height: 33vh;
+}
+
+.w1 {
+    background-color: white;
+    height: 4vh;
+}
+
+.mid {
+    background-color: blue;
+    height: 26vh;
+}
+
+.w2 {
+    background-color: white;
+    height: 4vh;
+}
+
+.low {
+    background-color: green;
+    height: 33vh;
+}

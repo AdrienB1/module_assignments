@@ -1,0 +1,148 @@
+/* --------- Main Styles --------- */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.grid-container > div {
+    border: 1px solid black;
+    border-radius: 12px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --------- Boxes Laptop --------- */
+
+@media only screen and (min-width: 1200px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 25vh);
+        margin: 20px;
+        grid-gap: 20px;
+    }
+
+    .box1 {
+        background-color: #D95555;
+        grid-column: 1/-1;
+        grid-row: 1/2;
+    }
+
+    .box2 {
+        background-color: #1E3040;
+        grid-column: 1/2;
+        grid-row: 2/4;
+    }
+
+    .box3 {
+        background-color: #141C26;
+        grid-column: 2/4;
+        grid-row: 2/4;
+    }
+
+    .box4 {
+        background-color: #A7CBD9;
+        grid-column: 4/5;
+        grid-row: 2/4;
+    }
+
+    .box5 {
+        background-color: #BF9926;
+        grid-column: 1/-1;
+        grid-row: 4/5;
+    }
+}
+
+/* --------- Boxes Phone --------- */
+
+@media only screen and (max-width: 520px) {
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(6, 16vh);
+        margin: 20px;
+        grid-gap: 20px;
+    }
+
+    .box1 {
+        background-color: #6C868C;
+        grid-column: 1/-1;
+        grid-row: 1/2;
+    }
+
+    .box2 {
+        background-color: #F2A25C;
+        grid-column: 1/-1;
+        grid-row: 2/3;
+    }
+
+    .box3 {
+        background-color: #1E4040;
+        grid-column: 1/-1;
+        grid-row: 3/5;
+    }
+
+    .box4 {
+        background-color: #D9B391;
+        grid-column: 1/-1;
+        grid-row: 5/6;
+    }
+
+    .box5 {
+        background-color: #012326;
+
+        grid-column: 1/-1;
+        grid-row: 6/7;
+    }
+
+}
+
+/* --------- Boxes Tablet --------- */
+
+@media only screen and (min-width: 521px) and (max-width: 1199px) {
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 20vh);
+        margin: 20px;
+        grid-gap: 20px;
+    }
+
+    .box1 {
+        background-color: #A568A6;
+        grid-column: 1/-1;
+        grid-row: 1/2;
+    }
+
+    .box2 {
+        background-color: #F2DE79;
+        grid-column: 1/2;
+        grid-row: 2/4;
+    }
+
+    .box3 {
+        background-color: #723873;
+        grid-column: 2/-1;
+        grid-row: 2/4;
+    }
+
+    .box4 {
+        background-color: #F2D230;
+        grid-column: 1/-1;
+        grid-row: 4/5;
+    }
+
+    .box5 {
+        background-color: #D9D9D9;
+        grid-column: 1/-1;
+        grid-row: 5/6;
+    }
+
+}
