@@ -145,14 +145,14 @@ while (key == false) {
         )
         console.log("You found the key! ")
         console.log(" ")
-        while ((key = true)) {
+        while ((key == true)) {
             var choiceTwo = readLine.question(
                 "Now that you have the key, what would you like to do? "
             )
             console.log(" ")
             if (choiceTwo == 1) {
                 console.log(
-                    "You put your hand in the hole and are instantly killed. The end. "
+                    "You, unfortunately, put your hand in the hole and are instantly killed. The end. "
                 )
                 console.log(" ")
                 break
