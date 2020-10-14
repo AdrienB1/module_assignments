@@ -3,7 +3,15 @@ var powerRangers = [
     "Kimberly Hart", 
     "Zack Taylor", 
     "Trini Kwan", 
-    "Billy Cranston"
+    "Billy Cranston",
+    "Bob Jobbet",
+    "Twack Zackson",
+    "Pleo Thoodlham",
+    "Pilber Milcar",
+    "Torque Lewith",
+    "Twadson Prawbingle",
+    "Rinko Ginglbetter",
+    "Draxim Sklounst",
 ]
 
 var rangersList = document.getElementById("rangers")
