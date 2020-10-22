@@ -1,8 +1,8 @@
 var powerRangers = [
-    "Jason Lee Scott", 
-    "Kimberly Hart", 
-    "Zack Taylor", 
-    "Trini Kwan", 
+    "Jason Lee Scott",
+    "Kimberly Hart",
+    "Zack Taylor",
+    "Trini Kwan",
     "Billy Cranston",
     "Bob Jobbet",
     "Twack Zackson",
@@ -11,7 +11,7 @@ var powerRangers = [
     "Torque Lewith",
     "Twadson Prawbingle",
     "Rinko Ginglbetter",
-    "Draxim Sklounst",
+    "Draxim Sklounst"
 ]
 
 var rangersList = document.getElementById("rangers")
