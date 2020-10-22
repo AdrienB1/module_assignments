@@ -1,0 +1,21 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.square {
+    background-color: grey;
+    height: 250px;
+    width: 250px;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px -1px gray;
+}

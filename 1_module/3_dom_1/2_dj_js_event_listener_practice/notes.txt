@@ -1,0 +1,11 @@
+Colors: 
+
+Blue: #5DADE2
+
+Red: #E63C38
+
+Yellow: #FFF852
+
+Green: #4BC94D
+
+Orange: #FF8A3C
