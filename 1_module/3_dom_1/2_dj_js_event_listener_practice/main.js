@@ -6,17 +6,25 @@ squareVar.addEventListener("mouseover", function() {
     squareVar.style.backgroundColor = "#5DADE2"
 })
 
-squareVar.addEventListener("mouseout", function() {
-    squareVar.style.backgroundColor = "grey"
-})
-
-
 //Red When holding left click over square
-squareVar.addEventListener("mousedown", function mouseState() {
+squareVar.addEventListener("mousedown", function() {
     squareVar.style.backgroundColor = "#E63C38"
 });
 
-squareVar.addEventListener("mouseup", function mouseState() {
-    squareVar.style.backgroundColor = "grey"
+//Yellow when letting go of left click over the square
+squareVar.addEventListener("mouseup", function() {
+    squareVar.style.backgroundColor = "#FFF852"
 });
 
+//Green on double click
+squareVar.addEventListener("dblclick", function() {
+    squareVar.style.backgroundColor = "#4BC94D"
+});
+
+//Declare html element as a variable
+var entireWindow = document.querySelector("html")
+
+//Orange on mouse wheel somewhere in the window
+entireWindow.addEventListener("wheel", function() {
+    squareVar.style.backgroundColor = "#FF8A3C"
+});
