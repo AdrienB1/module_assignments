@@ -1,0 +1,65 @@
+.header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.name {
+    color: peachpuff;
+}
+
+.messages {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    background-color: #E6E6E6;
+    border-radius: 8px;
+    margin: 10px 0px;
+    padding: 20px;
+}
+
+#main {
+    margin: 30px;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.message {
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.right {
+    align-self: flex-end;
+    background-color: lightblue;
+}
+
+.left {
+    align-self: flex-start;
+    background-color: burlywood;
+}
+
+.clearbutton {
+    border: none;
+    border-radius: 4px;
+    background-color: #E6E6E6;
+    height: 25px;
+    width: 46px;
+}
+
+.messageinput {
+    border: none;
+    border-radius: 4px;
+    background-color: #E6E6E6;
+    padding: 0;
+    height: 25px;
+}
+
+.sendbutton {
+    border: none;
+    border-radius: 4px;
+    background-color: #9E9E9E;
+    height: 25px;
+    width: 46px;
+}
