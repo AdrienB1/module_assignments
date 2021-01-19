@@ -1,8 +1,4 @@
-
-
-
 // <><><><><><><><><> QUALIFIER <><><><><><><><><> //
-
 
 ///////// H2 creation and placement /////////
 
@@ -17,7 +13,6 @@ newH2.innerHTML = "JavaScript Made This!!"
 
 // append newH2 to header parent
 headerVar.append(newH2)
-
 
 ///////// H3 creation and placement /////////
 
@@ -38,7 +33,6 @@ nameSpan.innerHTML = "Adrien "
 
 // append nameSpan to newH3
 newH3.prepend(nameSpan)
-
 
 ///////// header and h2/h3 styles /////////
 
@@ -62,10 +56,7 @@ newH3.style.margin = "0px"
 // nameSpan styles
 nameSpan.style.color = "#70B7BA"
 
-
-
 // <><><><><><><><><> BRONZE <><><><><><><><><> //
-
 
 ///////// selecting messages /////////
 
@@ -81,8 +72,7 @@ var rightMessages = messageContainer.getElementsByClassName("message right")
 // select all messages and assign them to array
 var allMessages = messageContainer.getElementsByClassName("message")
 
-
-///////// change message content ///////// 
+///////// change message content /////////
 
 // select first left message and change content
 leftMessages[0].innerHTML = "What do you call it when Batman skips church?"
@@ -96,39 +86,82 @@ leftMessages[1].innerHTML = "A Christian Bale! 😄"
 // select second right message and change content
 rightMessages[1].innerHTML = "Oh my god... How are we friends, lol?"
 
-
 ///////// setting event listener(s) for clear button /////////
 
 // select clear button and assign it to variable
 var clearButton = document.getElementById("clear-button")
 
 // change clear button color when hovering over it, revert when not
-clearButton.addEventListener("mouseover", function() {
+clearButton.addEventListener("mouseover", function () {
     clearButton.style.color = "white"
     clearButton.style.backgroundColor = "#BA8D70"
 })
 
-clearButton.addEventListener("mouseout", function() {
+clearButton.addEventListener("mouseout", function () {
     clearButton.style.color = "black"
     clearButton.style.backgroundColor = "#E6E6E6"
 })
 
 // event listener which clears messages upon clicking the clear button, change color to indicate click
-clearButton.addEventListener("mousedown", function() {
+clearButton.addEventListener("mousedown", function () {
     clearButton.style.backgroundColor = "#6D4C37"
     for (i = allMessages.length - 1; i >= 0; i--) {
         allMessages[i].remove()
     }
 })
 
-clearButton.addEventListener("mouseup", function() {
+clearButton.addEventListener("mouseup", function () {
     clearButton.style.backgroundColor = "#BA8D70"
 })
 
-
-
 // <><><><><><><><><> SILVER <><><><><><><><><> //
-
 
 ///////// selecting drop down and setting event listeners /////////
 
+//select theme drop down and assign it to a variable
+var dropDown = document.getElementById("theme-drop-down")
+
+//set event listener for drop down change
+dropDown.addEventListener("input", function (themeChange) {
+    //look for value/theme selected
+    if (themeChange.target.value == "theme-one") {
+        //change styles based on value/theme using for loop
+        for (i = 0; i < leftMessages.length; i++) {
+            leftMessages[i].style.backgroundColor = "burlywood"
+            leftMessages[i].style.color = "black"
+        }
+        for (i = 0; i < leftMessages.length; i++) {
+            rightMessages[i].style.backgroundColor = "lightblue"
+            rightMessages[i].style.color = "black"
+        }
+    } else if (themeChange.target.value == "theme-two") {
+        for (i = 0; i < leftMessages.length; i++) {
+            leftMessages[i].style.backgroundColor = "#262626"
+            leftMessages[i].style.color = "white"
+        }
+        for (i = 0; i < rightMessages.length; i++) {
+            rightMessages[i].style.backgroundColor = "#A60832"
+            rightMessages[i].style.color = "white"
+        }
+    } else if (themeChange.target.value == "theme-three") {
+        for (i = 0; i < leftMessages.length; i++) {
+            leftMessages[i].style.backgroundColor = "#CCBFBF"
+            leftMessages[i].style.color = "black"
+        }
+        for (i = 0; i < rightMessages.length; i++) {
+            rightMessages[i].style.backgroundColor = "#84CC88"
+            rightMessages[i].style.color = "black"
+        }
+    } else if (themeChange.target.value == "theme-four") {
+        for (i = 0; i < leftMessages.length; i++) {
+            leftMessages[i].style.backgroundColor = "#F28907"
+            leftMessages[i].style.color = "black"
+        }
+        for (i = 0; i < rightMessages.length; i++) {
+            rightMessages[i].style.backgroundColor = "#4B1C8C"
+            rightMessages[i].style.color = "white"
+        }
+    } else {
+        
+    }
+})
