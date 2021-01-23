@@ -14,7 +14,7 @@ function createDropDown(){
         dropDown.append(option)
     }
     dropDown.addEventListener("input", function(e){
-        e.target.style.backgroundColor = e.target.value
+        e.target.parentElement.style.backgroundColor = e.target.value
     })
     return dropDown
 }
@@ -26,6 +26,7 @@ function createSubItem(e){
     const dropDown = createDropDown()
     subItem.appendChild(dropDown)
     subItem.setAttribute("class", "subItem")
+    subItem.style.backgroundColor = colors[0]
     return subItem
 }
 
