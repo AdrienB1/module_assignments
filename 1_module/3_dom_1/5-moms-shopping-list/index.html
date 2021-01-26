@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta charset="utf-8" />
+        <meta name="Adrien" content="Mom's Shopping List" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Mom's Shopping List</title>
+    </head>
+    <body>
+        <div class="main-title-container">
+            <h1 class="title head">Mom's Shopping List</h1>
+        </div>
+        <div class="main">
+            <div class="form-section">
+                <div class="add-item-title-container">
+                    <h3 class="add-item-title">Add a New Item</h3>
+                </div>
+                <form name="addItem" id="add-todo" class="add-item-form">
+                    <input
+                        class="input"
+                        name="item-input"
+                        id="item-input"
+                        placeholder="Enter Item Name"
+                        maxlength="15"
+                        required
+                    />
+                    <button class="addButton">Add Item</button>
+                </form>
+            </div>
+            <div class="list-section">
+                <div class="list-title-bar">
+                    <h3 class="title item-list">Shopping List</h3>
+                </div>
+
+                <ul id="list">
+                    <li class="item">
+                        <div>Milk</div>
+                        <div class="button-container">
+                            <button class="edit-button">edit</button><!--
+                            --><button class="delete-button">X</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div>Cheerios</div>
+                        <div class="button-container">
+                            <button class="edit-button">edit</button><!--
+                            --><button class="delete-button">X</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div>2 Goats</div>
+                        <div class="button-container">
+                            <button class="edit-button">edit</button><!--
+                            --><button class="delete-button">X</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
