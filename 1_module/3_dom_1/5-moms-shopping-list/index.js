@@ -9,6 +9,11 @@ var editButtons = document.querySelectorAll(".edit-button")
 
 var deleteButtons = document.querySelectorAll(".delete-button")
 
+var listContainer = document.getElementById("list")
+
+var placeHolder = document.querySelector(".placeholderItem")
+
+
 
 //Input box highlight
 inputBox.addEventListener("focus", function () {
@@ -38,45 +43,109 @@ addItemButton.addEventListener("mouseup", function () {
 })
 
 
-//Add item button highlight and click
-editButtons.forEach( item => { item.addEventListener("mouseover", function () {
-    item.style.backgroundColor = "#07748C"
-})
-})
 
-editButtons.forEach( item => { item.addEventListener("mouseout", function () {
-    item.style.backgroundColor = "#5D5C5D"
-})
-})
 
-editButtons.forEach( item => { item.addEventListener("mousedown", function () {
-    item.style.backgroundColor = "#044A59"
-})
-})
+//Create list item and append to list
+document.addItem.addEventListener("submit", function (e) {
+    e.preventDefault()
+    const listItem = createItem(e)
 
-editButtons.forEach( item => { item.addEventListener("mouseup", function () {
-    item.style.backgroundColor = "#07748C"
-})
+    inputBox.value = ""
+
+    if (placeHolder !== null) {
+        placeHolder.remove()
+    } else {
+        
+    }
+
+    listContainer.appendChild(listItem)
 })
 
 
-//Edit button highlight and click
-deleteButtons.forEach( item => { item.addEventListener("mouseover", function () {
-    item.style.backgroundColor = "#F2B705"
-})
-})
 
-deleteButtons.forEach( item => { item.addEventListener("mouseout", function () {
-    item.style.backgroundColor = "#5D5C5D"
-})
-})
 
-deleteButtons.forEach( item => { item.addEventListener("mousedown", function () {
-    item.style.backgroundColor = "#F2CB05"
-})
-})
 
-deleteButtons.forEach( item => { item.addEventListener("mouseup", function () {
-    item.style.backgroundColor = "#F2B705"
-})
-})
+
+
+
+
+
+
+
+
+
+//Create Item Function
+function createItem (e) {
+    //create new li
+    const listItem = document.createElement("li")
+
+    //create name div and append it in li
+    const listItemNameDiv = document.createElement("div")
+    listItemNameDiv.setAttribute("class", "text-container")
+    listItemNameDiv.innerHTML = document.addItem.itemInput.value
+    listItem.appendChild(listItemNameDiv)
+
+    //create button container and append to li
+    const buttonHolder = document.createElement("div")
+    buttonHolder.setAttribute("class", "button-container")
+    listItem.appendChild(buttonHolder)
+
+    //create edit button and append it to button container
+    const editButtonNew = document.createElement("button")
+    editButtonNew.setAttribute("class", "edit-button")
+    editButtonNew.innerHTML = "edit"
+    buttonHolder.appendChild(editButtonNew)
+
+    editButtonNew.addEventListener("mouseover", function () {
+        editButtonNew.style.backgroundColor = "#07748C"
+    })
+    
+    
+    editButtonNew.addEventListener("mouseout", function () {
+        editButtonNew.style.backgroundColor = "#5D5C5D"
+    })
+    
+    
+    editButtonNew.addEventListener("mousedown", function () {
+        editButtonNew.style.backgroundColor = "#044A59"
+    })
+    
+    
+    editButtonNew.addEventListener("mouseup", function () {
+        editButtonNew.style.backgroundColor = "#07748C"
+    })
+
+
+
+
+
+    //create delete button and append it to button container
+    const deleteButtonNew = document.createElement("button")
+    deleteButtonNew.setAttribute("class", "delete-button")
+    deleteButtonNew.innerHTML = "X"
+    buttonHolder.appendChild(deleteButtonNew)
+
+    deleteButtonNew.addEventListener("mouseover", function () {
+        deleteButtonNew.style.backgroundColor = "#F2B705"
+    })
+    
+    deleteButtonNew.addEventListener("mouseout", function () {
+        deleteButtonNew.style.backgroundColor = "#5D5C5D"
+    })
+    
+    deleteButtonNew.addEventListener("mousedown", function () {
+        deleteButtonNew.style.backgroundColor = "#F2CB05"
+    })
+    
+    deleteButtonNew.addEventListener("mouseup", function () {
+        deleteButtonNew.style.backgroundColor = "#F2B705"
+    })
+
+    //delete button functionality
+    deleteButtonNew.addEventListener("click", function (){
+        listItem.remove()
+    })
+
+
+    return listItem
+}
