@@ -1,3 +1,7 @@
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
 .title {
     text-align: center;
 }
@@ -53,6 +57,7 @@ h3 {
     box-sizing: border-box;
     text-align: center;
     outline: none;
+    font-weight: 300;
     background-color: #FFFFFF;
 }
 
@@ -64,6 +69,7 @@ h3 {
     background-color: #404040;
     outline: none;
     color: white;
+    font-weight: 400;
 }
 
 .list-section {
@@ -78,7 +84,7 @@ h3 {
 #list {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 65%;
     padding: 10px;
 }
 
@@ -89,44 +95,52 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    text-align: center;
     height: 35px;
-    background-color: #FFFFFF;
-    border-radius: 5px 7px 7px 5px;
+    border-radius: 5px;
+    font-weight: 600;
 }
 
 
 #list > li > div {
-    margin-bottom: 0;
-    text-align: center;
-    padding-left: 7px;
+    margin: 0;
+    text-align: left;
+}
+
+.text-container {
+    background-color: #FFFFFF;
+    height: 100%;
+    width: 73%;
+    line-height: 35px;
+    padding-left: 10px;
+    border-radius: 5px;
 }
 
 #list > li > .button-container {
     height: 100%;
     margin: 0;
     padding: 0;
-    width: 25%;
+    width: 23%;
 }
 
 .edit-button {
     height: 100%;
+    width: 55%;
     margin: 0;
     outline: none;
     border: none;
     border-right: 1px solid black;
-    width: 60%;
     background-color: #5D5C5D;
     color: white;
+    border-radius: 5px;
 }
 
 .delete-button {
     height: 100%;
+    width: 30%;
     margin: 0;
     outline: none;
     border: none;
-    width: 40%;
-    border-radius: 0 5px 5px 0;
     background-color: #5D5C5D;
     color: white;
+    border-radius: 5px;
 }
