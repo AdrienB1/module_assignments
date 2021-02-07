@@ -141,6 +141,7 @@ function createItem (e) {
         deleteButtonNew.style.backgroundColor = "#F2B705"
     })
 
+    
     //delete button functionality
     deleteButtonNew.addEventListener("click", function (){
         listItem.remove()
