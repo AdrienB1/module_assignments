@@ -13,6 +13,22 @@ var officeItems = [
     "computer"
 ]
 
+var count = 0
+
+for (i = 0; i < officeItems.length; i++) {
+    if (officeItems[i] == "computer") {
+        var count = count + 1
+    } else {
+
+    }
+    if (i == officeItems.length - 1) {
+        console.log(count)
+
+    } else {
+
+    }
+}
+
 
 
 //<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
@@ -45,6 +61,25 @@ var peopleWhoWantToSeeMadMaxFuryRoad = [
         gender: "female"
     }
 ]
+var genderCheck = "string"
+
+for (i = 0; i < peopleWhoWantToSeeMadMaxFuryRoad.length; i++) {
+    if (peopleWhoWantToSeeMadMaxFuryRoad[i].gender == "male") {
+        var genderCheck = "he"
+    } else if (peopleWhoWantToSeeMadMaxFuryRoad[i].gender == "female") {
+        var genderCheck = "she"
+    } else {
+
+    }
+
+    if (peopleWhoWantToSeeMadMaxFuryRoad[i].age >= 18) {
+        console.log(peopleWhoWantToSeeMadMaxFuryRoad[i].name + " is totally old enough to go see Mad Max, " + genderCheck + " will love it!")
+    } else if (peopleWhoWantToSeeMadMaxFuryRoad[i].age < 18) {
+        console.log(peopleWhoWantToSeeMadMaxFuryRoad[i].name + " is not old enough to see Mad Max yet, " + genderCheck + " can't go in!")
+    } else {
+
+    }
+}
 
 
 //<><><><><> Bonus Challenges for #2 <><><><><>
@@ -74,4 +109,27 @@ Sample Arrays:
 [9, 3, 4, 2]      // "The light is off"
 */
 
+/*var toggleLight = [2, 3, 2]
+var light = false
+for (i = 0; i < toggleLight.length; i++) {
+    for (i = toggleLight[i]; i > 0; i--) {
+        if (light == false) {
+            var light = true
+        } else if (light == true) {
+            var light = false
+        }
+    }
 
+    if (i == toggleLight.length - 1) {
+        if (light == true) {
+            console.log("The light is on")
+        } else if (light == false) {
+            console.log("The light is off")
+        } else {
+
+        }
+    } else {
+
+    }
+}
+*/
