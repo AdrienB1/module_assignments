@@ -66,3 +66,67 @@ for (i = 0; i < fruit.length; i++) {
 }
 
 console.log(otherFruit)
+
+
+
+//---------------------SILVER---------------------
+
+var peopleArray = [
+    {
+      name: "Harrison Ford",
+      occupation: "Actor"
+    },
+    {
+      name: "Justin Bieber",
+      occupation: "Singer"
+    },
+    {
+      name: "Vladimir Putin",
+      occupation: "Politician"
+    },
+    {
+      name: "Oprah",
+      occupation: "Entertainer"
+    }
+  ]
+
+//Write a loop that will print out all the names of the people of the people array
+
+for (i = 0; i < peopleArray.length; i++) {
+    console.log(peopleArray[i].name)
+}
+
+
+
+//Write a loop that pushes the names into a names array, and the occupations into an occupations array.
+
+var names = []
+var occupations = []
+
+for (i = 0; i < peopleArray.length; i++) {
+    names.push(peopleArray[i].name)
+    occupations.push(peopleArray[i].occupation)
+}
+
+console.log(names)
+console.log(occupations)
+
+
+
+//Write a loop that pushes every other name to an array starting with the first person, 
+//in this case "Harrison Ford", and every other occupation to another array 
+//starting with, in this case, "Singer".
+
+var names = []
+var occupations = []
+
+for (i = 0; i < peopleArray.length; i++) {
+    if (i % 2 == 0) {
+        names.push(peopleArray[i].name)
+    } else {
+        occupations.push(peopleArray[i].occupation)
+    }
+}
+
+console.log(names)
+console.log(occupations)
