@@ -12,8 +12,15 @@ console.log(resultOne)
 
 // 2 - Write a function that takes a string as a parameter and returns a number that is half the string's length, rounded down.
 //Hint: You'll need to use Math.floor().
-
-
+var stringTwo = "Arctic Peeper"
+function halfStringLength(stringTwo) {
+    var length = stringTwo.length
+    var halfLength = length / 2
+    var rounded = Math.floor(halfLength)
+    return rounded
+}
+var resultTwo = halfStringLength(stringTwo)
+console.log(resultTwo)
 
 // 3 - Write a function that uses slice() and the other functions you've written to return the first half of the given string.
 
