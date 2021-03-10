@@ -50,4 +50,4 @@ john.printEmployeeForm()
 
 
 // - Put the generated employees into the employees array using whichever method you prefer.
-
+employees.push(jack, deku, tonjuro, john)
