@@ -1,8 +1,13 @@
 // 1 - Write a function that takes a string as a parameter and returns the same string in all capital letters followed by all lowercase letters.
 var stringOne = "MoBIuS"
 function upperLower(stringOne) {
-    
+    var first = stringOne.toUpperCase()
+    var second = stringOne.toLowerCase()
+    var upperLowerString = first + second
+    return upperLowerString
 }
+var resultOne = upperLower(stringOne)
+console.log(resultOne)
 
 
 // 2 - Write a function that takes a string as a parameter and returns a number that is half the string's length, rounded down.
