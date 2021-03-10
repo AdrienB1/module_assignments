@@ -50,5 +50,19 @@ console.log(resultFour)
 
 // 5 - Write a function that takes a string as a parameter and capitalizes any character that follows a space.
 //(This one is a step up in difficulty and utilizes the .split() string method and .join() array method):
-
-
+var stringFive = "I turned myself into a pickle morty"
+function allWordsCapital(stringFive) {
+    var newStr
+    var stringFiveArray = []
+    var stringFiveWithCapitals = []
+    if (stringFive.indexOf(" ") != -1) {
+        var stringFiveArray = stringFive.split(" ")
+        for (var i = 0; i < stringFiveArray.length; i++) {
+            stringFiveWithCapitals.push(stringFiveArray[i].charAt(0).toUpperCase() + stringFiveArray[i].slice(1, ))
+        }
+        newStr = stringFiveWithCapitals.join(" ")
+    }
+    return newStr
+}
+var resultFive = allWordsCapital(stringFive)
+console.log(resultFive)
