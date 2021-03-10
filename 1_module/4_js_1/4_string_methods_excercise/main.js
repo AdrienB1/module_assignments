@@ -32,9 +32,20 @@ function firstHalf(stringThree) {
 var resultThree = firstHalf(stringThree)
 console.log(resultThree)
 
+
 // 4 - Write a function that takes a string as a parameter and returns that string where the first half is capitalized, and the second half is lowercase.
 //Hint: If your string length is odd, use Math.floor() to round down.
-
+var stringFour = "Toss a coin to your Witcher"
+function halfUpperLower(stringFour) {
+    var first = firstHalf(stringFour)
+    var second = stringFour.slice(halfStringLength(stringFour), )
+    var firstCapital = first.toUpperCase()
+    var secondCapital = second.toLowerCase()
+    var firstSecondCapital = firstCapital + secondCapital
+    return firstSecondCapital
+}
+var resultFour = halfUpperLower(stringFour)
+console.log(resultFour)
 
 
 // 5 - Write a function that takes a string as a parameter and capitalizes any character that follows a space.
