@@ -22,9 +22,15 @@ function halfStringLength(stringTwo) {
 var resultTwo = halfStringLength(stringTwo)
 console.log(resultTwo)
 
+
 // 3 - Write a function that uses slice() and the other functions you've written to return the first half of the given string.
-
-
+var stringThree = "The dragon spawned an egg"
+function firstHalf(stringThree) {
+    var slicedStringFirstHalf = stringThree.slice(0, halfStringLength(stringThree))
+    return slicedStringFirstHalf
+}
+var resultThree = firstHalf(stringThree)
+console.log(resultThree)
 
 // 4 - Write a function that takes a string as a parameter and returns that string where the first half is capitalized, and the second half is lowercase.
 //Hint: If your string length is odd, use Math.floor() to round down.
