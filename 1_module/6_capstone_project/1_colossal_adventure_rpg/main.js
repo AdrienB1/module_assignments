@@ -19,12 +19,12 @@ var lootArray = [
     "Shiny Maple Longbow",
     "Used Bag of Holding",
     "Old Baseball",
-    "Enchanted Running Shoes",
+    "A Pair of Enchanted Running Shoes",
     "Glowstone",
     "Rusty Knife",
-    "15 Gold Coins",
+    "15 Gold",
     "Tattered Beanie",
-    "10 Chicken Nuggets"
+    "A box Containing 10 Chicken Nuggets"
 ]
 
 var playerHealth = 10
@@ -74,7 +74,7 @@ while (livingPlayer == true) {
             console.log("It is " + enemyChosen + "!")
             while (playerHealth > 0 && enemyHealth > 0) {
                 let attackOrRun = readLine.question(
-                    "Will you attack or run? ('a' or 'r')"
+                    "Will you attack or run? ('a' or 'r') "
                 )
                 console.log(" ")
                 if (attackOrRun == "a") {
@@ -119,6 +119,7 @@ while (livingPlayer == true) {
                         console.log(
                             "Your foe has fallen! The path forward is now clear."
                         )
+                        //heal code
                         var amountHealed = randomHeal(11 - playerHealth)
                         var playerHealth = playerHealth + amountHealed
                         console.log(
@@ -156,6 +157,7 @@ while (livingPlayer == true) {
                     console.log(" ")
                 }
             }
+            //Not Attacked Messages
         } else if (attackChance == 0) {
             console.log("You take a few steps forward, you feel alone.")
             console.log(" ")
@@ -168,6 +170,7 @@ while (livingPlayer == true) {
             )
             console.log(" ")
         }
+        //Checking Inventory, name, and HP using 'p' or 'print'
     } else if (walkingPlayer == "p") {
         console.log("You check your inventory and HP, you currently have: ")
         console.log(userName + "'s HP: " + playerHealth)
@@ -186,6 +189,8 @@ while (livingPlayer == true) {
         console.log(" ")
     }
 }
+
+//Placed this here to reference it during project work
 
 /*
 If a wild enemy appears:
