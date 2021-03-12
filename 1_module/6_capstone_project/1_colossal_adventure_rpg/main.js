@@ -1,7 +1,31 @@
 //arrays and variables used in functions
-const enemyBucket = ["Henry the Hairless ape", "Gordon the Goldfish", "Wilson the whimsical wildebeast", "Mackey the talking mouse", "Pluto the pleased purlovia"]
+const enemyBucket = [
+    "Henry the Hairless ape",
+    "Gordon the Goldfish",
+    "Wilson the whimsical wildebeast",
+    "Mackey the talking mouse",
+    "Pluto the pleased purlovia"
+]
 
-var lootArray = ["Silver Longsword", "Broken Arrow", "Health Potion", "Invisibility Potion", "Left Sock", "Fish Bowl", "Nice Tree Branch", "Bottle of Mead", "Shiny Maple Longbow", "Used Bag of Holding", "Old Baseball", "Enchanted Running Shoes", "Glowstone", "Rusty Knife", "15 Gold Coins", "Tattered Beanie", "10 Chicken Nuggets"]
+var lootArray = [
+    "Silver Longsword",
+    "Broken Arrow",
+    "Health Potion",
+    "Invisibility Potion",
+    "Left Sock",
+    "Fish Bowl",
+    "Nice Tree Branch",
+    "Bottle of Mead",
+    "Shiny Maple Longbow",
+    "Used Bag of Holding",
+    "Old Baseball",
+    "Enchanted Running Shoes",
+    "Glowstone",
+    "Rusty Knife",
+    "15 Gold Coins",
+    "Tattered Beanie",
+    "10 Chicken Nuggets"
+]
 
 var playerHealth = 10
 
@@ -10,17 +34,21 @@ var playerInventory = []
 //Readline use:
 const readLine = require("readline-sync")
 
-
 //Console must greet player with a fun message
 //Console must ask for the player's name and store it
 console.log("Hey, you... You're finally awake")
 const userName = readLine.question("What is your name? ")
 console.log(" ")
-console.log("We were knocked out after being teleported by an accidental alchemy explosion.")
+console.log(
+    "We were knocked out after being teleported by an accidental alchemy explosion."
+)
 console.log("We seem to be lost within a large forest full of unknown dangers.")
-console.log("We can find the way out faster if we split up, please be careful, " + userName + "!")
+console.log(
+    "We can find the way out faster if we split up, please be careful, " +
+        userName +
+        "!"
+)
 console.log(" ")
-
 
 /*
 Walking:
@@ -29,7 +57,11 @@ Every time the player walks, a random algorithm will be run that determines if a
 */
 var livingPlayer = true
 while (livingPlayer == true) {
-    var walkingPlayer = readLine.question("Press 'w' to walk, or press 'p' or type 'print' to check the player inventory and HP. ").toLowerCase()
+    var walkingPlayer = readLine
+        .question(
+            "Press 'w' to walk, or press 'p' or type 'print' to check the player inventory and HP. "
+        )
+        .toLowerCase()
     console.log(" ")
     if (walkingPlayer == "w") {
         //walking code
@@ -41,7 +73,9 @@ while (livingPlayer == true) {
             console.log("A shape jumps out of the underbrush suddenly!")
             console.log("It is " + enemyChosen + "!")
             while (playerHealth > 0 && enemyHealth > 0) {
-                let attackOrRun = readLine.question("Will you attack or run? ('a' or 'r')" )
+                let attackOrRun = readLine.question(
+                    "Will you attack or run? ('a' or 'r')"
+                )
                 console.log(" ")
                 if (attackOrRun == "a") {
                     //attack code
@@ -49,18 +83,32 @@ while (livingPlayer == true) {
                     let damageDealtToEnemy = amountOfDamage(11)
                     var enemyHealth = enemyHealth - damageDealtToEnemy
                     console.log("You dealt " + damageDealtToEnemy + " damage!")
-                    console.log("Your enemy has " + enemyHealth + " HP remaining!")
+                    console.log(
+                        "Your enemy has " + enemyHealth + " HP remaining!"
+                    )
                     console.log(" ")
                     if (enemyHealth > 0) {
                         //Enemy Attack
-                        console.log(enemyChosen + " survived the hit, and strikes back!")
+                        console.log(
+                            enemyChosen + " survived the hit, and strikes back!"
+                        )
                         let damageDealtToPlayer = amountOfDamage(9)
                         var playerHealth = playerHealth - damageDealtToPlayer
-                        console.log("You take " + damageDealtToPlayer + " points of damage.")
-                        console.log("You have " + playerHealth + " HP remaining!")
+                        console.log(
+                            "You take " +
+                                damageDealtToPlayer +
+                                " points of damage."
+                        )
+                        console.log(
+                            "You have " + playerHealth + " HP remaining!"
+                        )
                         console.log(" ")
                         if (playerHealth <= 0) {
-                            console.log("Your foe dealt " + damageDealtToPlayer + " damage and has bested you!")
+                            console.log(
+                                "Your foe dealt " +
+                                    damageDealtToPlayer +
+                                    " damage and has bested you!"
+                            )
                             console.log(" ")
                             console.log("You have died.")
                             var livingPlayer = false
@@ -68,11 +116,17 @@ while (livingPlayer == true) {
                         }
                     } else {
                         //Enemy Dead
-                        console.log("Your foe has fallen! The path forward is now clear.")
+                        console.log(
+                            "Your foe has fallen! The path forward is now clear."
+                        )
                         var amountHealed = randomHeal(11 - playerHealth)
                         var playerHealth = playerHealth + amountHealed
-                        console.log("You also gained " + amountHealed + " HP back!")
-                        console.log("You now have " + playerHealth + " HP remaining.")
+                        console.log(
+                            "You also gained " + amountHealed + " HP back!"
+                        )
+                        console.log(
+                            "You now have " + playerHealth + " HP remaining."
+                        )
                         console.log(" ")
                         //Loot Code
                         var itemIndex = randomItemSelection(lootArray.length)
@@ -89,23 +143,29 @@ while (livingPlayer == true) {
                     if (runAwaySuccess == 0) {
                         console.log("You couldn't get away fast enough! ")
                     } else {
-                        console.log("You ran to safety! The path forward is now clear.")
+                        console.log(
+                            "You ran to safety! The path forward is now clear."
+                        )
                         var enemyHealth = 0
                     }
                 } else {
                     //if the user does not enter an a or r
-                    console.log("I did not understand, please enter 'a' to attack, or 'r' to run.")
+                    console.log(
+                        "I did not understand, please enter 'a' to attack, or 'r' to run."
+                    )
                     console.log(" ")
                 }
             }
         } else if (attackChance == 0) {
             console.log("You take a few steps forward, you feel alone.")
             console.log(" ")
-        } else if(attackChance == 1) {
+        } else if (attackChance == 1) {
             console.log("You move forward a few paces, though you feel uneasy.")
             console.log(" ")
         } else {
-            console.log("You step carefully onward, and feel as if you are being watched.")
+            console.log(
+                "You step carefully onward, and feel as if you are being watched."
+            )
             console.log(" ")
         }
     } else if (walkingPlayer == "p") {
@@ -120,14 +180,12 @@ while (livingPlayer == true) {
         console.log(playerInventory)
     } else {
         //if user does not enter 'w'
-        console.log("I did not understand, please enter 'w' to walk, or press 'p' or type 'print' to check the player inventory and HP.")
+        console.log(
+            "I did not understand, please enter 'w' to walk, or press 'p' or type 'print' to check the player inventory and HP."
+        )
         console.log(" ")
     }
-
-
-
 }
-
 
 /*
 If a wild enemy appears:
@@ -140,19 +198,11 @@ If the player kills the enemy you can give the Player some HP and a special item
 If the enemy kills the player the console prints a cool death message and the game ends
 */
 
-
-
 /*
 Inventory
 When the player kills enemies, they are awarded with items
 If the user enters 'Print' or 'p' in the console, the console will print the players name, HP, and each item in their inventory
 */
-
-
-
-
-
-
 
 // ---------- Functions ----------
 function randomEnemyChance(max) {
@@ -185,9 +235,9 @@ function randomItemSelection(max) {
 }
 
 function removeItem(arr, value) {
-    var index = arr.indexOf(value);
+    var index = arr.indexOf(value)
     if (index > -1) {
-      arr.splice(index, 1);
+        arr.splice(index, 1)
     }
-    return arr;
-  }
+    return arr
+}
