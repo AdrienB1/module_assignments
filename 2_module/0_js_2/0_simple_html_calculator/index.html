@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>HTML Calculator</title>
+        <meta name="Adrien" content="Simple HTML Calculator" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+        <header>
+            <h1>Simple HTML Calculator</h1>
+        </header>
+        <main>
+            <div id="calculator" class="calcForm">
+                <form id="addForm" class="add mainInputHolder">
+                    <h2>Addition</h2>
+                    <div class="inputHolder">
+                        <input
+                            class="addOne"
+                            type="number"
+                            placeholder="number 1"
+                        />
+                        <p class="symbol">+</p>
+                        <input
+                            class="addTwo"
+                            type="number"
+                            placeholder="number 2"
+                        />
+                    </div>
+                    
+                    <p class="addResult result"></p>
+                    <input class="submitButton" type="submit"/>
+                </form>
+                <form id="subtractForm" class="subtract mainInputHolder">
+                    <h2>Subtraction</h2>
+                    <div class="inputHolder">
+                        <input
+                            class="subtractOne"
+                            type="number"
+                            placeholder="number 1"
+                        />
+                        <p class="symbol">-</p>
+                        <input
+                            class="subtractTwo"
+                            type="number"
+                            placeholder="number 2"
+                        />
+                    </div>
+                    <p class="subtractResult result"></p>
+                    <input class="submitButton" type="submit"/>
+                </form>
+                <form id="multiplyForm" class="multiply mainInputHolder">
+                    <h2>Multiplication</h2>
+                    <div class="inputHolder">
+                        <input
+                            class="multiplyOne"
+                            type="number"
+                            placeholder="number 1"
+                        />
+                        <p class="symbol">*</p>
+                        <input
+                            class="multiplyTwo"
+                            type="number"
+                            placeholder="number 2"
+                        />
+                    </div>
+                    <p class="multiplyResult result"></p>
+                    <input class="submitButton" type="submit"/>
+                </form>
+            </div>
+        </main>
+        <footer></footer>
+        <script src="main.js"></script>
+    </body>
+</html>
