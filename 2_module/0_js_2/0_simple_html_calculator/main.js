@@ -35,13 +35,11 @@ const multiplyNumberOne = document.querySelector(".multiplyOne")
 const multiplyNumberTwo = document.querySelector(".multiplyTwo")
 
 
-//----------Addition Code----------
+//----------Math Event Code----------
 
 addForm.addEventListener("submit", addFunction)
-
-
-
-
+subtractForm.addEventListener("submit", subtractFunction)
+multiplyForm.addEventListener("submit", multiplyFunction)
 
 
 
@@ -69,15 +67,20 @@ multiplyNumberOne.addEventListener("blur", removeFocusGlow)
 multiplyNumberTwo.addEventListener("focus", focusGlow)
 multiplyNumberTwo.addEventListener("blur", removeFocusGlow)
 
-//submit buttons
-addSubmitButton.addEventListener("mousedown", e => {
-    addSubmitButton.style.backgroundColor = "#90CBFB"
-})
 
-addSubmitButton.addEventListener("mouseup", e => {
-    addSubmitButton.style.backgroundColor = "#003F63"
-})
+//submit buttons click styles
 
+//add
+addSubmitButton.addEventListener("mousedown", clickColor)
+addSubmitButton.addEventListener("mouseup", releaseClickColor)
+
+//subtract
+subtractSubmitButton.addEventListener("mousedown", clickColor)
+subtractSubmitButton.addEventListener("mouseup", releaseClickColor)
+
+//multiply
+multiplySubmitButton.addEventListener("mousedown", clickColor)
+multiplySubmitButton.addEventListener("mouseup", releaseClickColor)
 
 //--------------------Functions--------------------
 
@@ -91,6 +94,14 @@ function removeFocusGlow() {
     }
 }
 
+function clickColor(event) {
+    event.target.style.backgroundColor = "#90CBFB"
+}
+
+function releaseClickColor(event) {
+    event.target.style.backgroundColor = "#003F63"
+}
+
 function addFunction(event) {
     event.preventDefault()
     let numOne = event.target.numberOne.value
@@ -99,5 +110,30 @@ function addFunction(event) {
     let numTwoConverted = parseInt(numTwo)
     let result = numOneConverted + numTwoConverted
     addResultField.innerHTML = result
+    event.target.numberOne.value = ""
+    event.target.numberTwo.value = ""
 }
 
+function subtractFunction(event) {
+    event.preventDefault()
+    let numOne = event.target.numberOne.value
+    let numTwo = event.target.numberTwo.value
+    let numOneConverted = parseInt(numOne)
+    let numTwoConverted = parseInt(numTwo)
+    let result = numOneConverted - numTwoConverted
+    subtractResultField.innerHTML = result
+    event.target.numberOne.value = ""
+    event.target.numberTwo.value = ""
+}
+
+function multiplyFunction(event) {
+    event.preventDefault()
+    let numOne = event.target.numberOne.value
+    let numTwo = event.target.numberTwo.value
+    let numOneConverted = parseInt(numOne)
+    let numTwoConverted = parseInt(numTwo)
+    let result = numOneConverted * numTwoConverted
+    multiplyResultField.innerHTML = result
+    event.target.numberOne.value = ""
+    event.target.numberTwo.value = ""
+}
