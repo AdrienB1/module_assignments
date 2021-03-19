@@ -20,56 +20,65 @@
                     <h2>Addition</h2>
                     <div class="inputHolder">
                         <input
-                            class="addOne"
+                            name="numberOne"
+                            class="addOne numberField"
                             type="number"
                             placeholder="number 1"
                         />
                         <p class="symbol">+</p>
                         <input
-                            class="addTwo"
+                            name="numberTwo"
+                            class="addTwo numberField"
                             type="number"
                             placeholder="number 2"
                         />
                     </div>
                     
-                    <p class="addResult result"></p>
-                    <input class="submitButton" type="submit"/>
+                    <label>Result</label>
+                    <p id="addResult" class="result"></p>
+                    <input class="submitButton addSubmit" type="submit"/>
                 </form>
                 <form id="subtractForm" class="subtract mainInputHolder">
                     <h2>Subtraction</h2>
                     <div class="inputHolder">
                         <input
-                            class="subtractOne"
+                            name="numberOne"
+                            class="subtractOne numberField"
                             type="number"
                             placeholder="number 1"
                         />
                         <p class="symbol">-</p>
                         <input
-                            class="subtractTwo"
+                            name="numberTwo"
+                            class="subtractTwo numberField"
                             type="number"
                             placeholder="number 2"
                         />
                     </div>
-                    <p class="subtractResult result"></p>
-                    <input class="submitButton" type="submit"/>
+                    <label>Result</label>
+                    <p id="subtractResult" class="result"></p>
+                    <input class="submitButton subtractSubmit" type="submit"/>
                 </form>
                 <form id="multiplyForm" class="multiply mainInputHolder">
                     <h2>Multiplication</h2>
                     <div class="inputHolder">
                         <input
-                            class="multiplyOne"
+                            name="numberOne"
+                            class="multiplyOne numberField"
                             type="number"
                             placeholder="number 1"
                         />
                         <p class="symbol">*</p>
                         <input
-                            class="multiplyTwo"
+                            name="numberTwo"
+                            class="multiplyTwo numberField"
                             type="number"
                             placeholder="number 2"
                         />
                     </div>
-                    <p class="multiplyResult result"></p>
-                    <input class="submitButton" type="submit"/>
+                    <label>Result</label>
+                    <p id="multiplyResult" class="result"></p>
+                    <input class="submitButton multiplySubmit" type="submit"/>
                 </form>
             </div>
         </main>
