@@ -6,6 +6,7 @@ html {
     height: 100%;
     width: 100%;
     font-family: "Noto Sans", sans-serif;
+    background-image: url("/images/simple-pattern.jpg");
 }
 
 body {
