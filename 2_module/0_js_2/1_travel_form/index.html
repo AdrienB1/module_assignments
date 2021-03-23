@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Travel Form</title>
+        <meta name="Adrien" content="Travel Form" />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+        <header class="head">
+            <h1>Not at Home Airlines</h1>
+        </header>
+        <main class="formHolder">
+            <form name="travelForm" id="myForm">
+                <div class="nameSection">
+                    <label>First Name: </label>
+                    <input
+                        type="text"
+                        name="firstName"
+                        class="firstNameInput"
+                    />
+
+                    <label>Last Name: </label>
+                    <input type="text" name="lastName" class="lastNameInput" />
+                </div>
+                <div class="ageSection">
+                    <label>Age: </label>
+                    <input type="number" name="age" class="ageInput" />
+                </div>
+                <div class="genderSection">
+                    <p>Gender:</p>
+                    <label>Male</label>
+                    <input
+                        type="radio"
+                        name="gender"
+                        class="genderInput"
+                        value="male"
+                    />
+                    <label>Female</label>
+                    <input
+                        type="radio"
+                        name="gender"
+                        class="genderInput"
+                        value="female"
+                    />
+                </div>
+                <div class="locationSection">
+                    <label>Where are you going?</label>
+                    <select name="location" class="locationInput">
+                        <option value="Rome">Rome</option>
+                        <option value="The Moon">The Moon</option>
+                        <option value="Tokyo">Tokyo</option>
+                        <option value="Home">Home</option>
+                        <option value="Anywhere">Anywhere</option>
+                        <option value="Quebec">Quebec</option>
+                        <option value="Madagascar">Madagascar</option>
+                        <option value="The Carribean">The Carribean</option>
+                    </select>
+                </div>
+                <div class="foodSection">
+                    <p>Dietary Restrictions (check all that apply):</p>
+                    <label>Pescatarian:</label>
+                    <input
+                        type="checkbox"
+                        name="diet"
+                        class="dietInput"
+                        value="pescatarian"
+                    />
+                    <label>Vegetarian: </label>
+                    <input
+                        type="checkbox"
+                        name="diet"
+                        class="dietInput"
+                        value="vegetarian"
+                    />
+                    <label>Vegan: </label>
+                    <input
+                        type="checkbox"
+                        name="diet"
+                        class="dietInput"
+                        value="vegan"
+                    />
+                    <label>Halaal</label>
+                    <input
+                        type="checkbox"
+                        name="diet"
+                        class="dietInput"
+                        value="Halaal"
+                    />
+                    <label>Anything Goes: </label>
+                    <input
+                        type="checkbox"
+                        name="diet"
+                        class="dietInput"
+                        value="anything goes"
+                    />
+                </div>
+            </form>
+        </main>
+        <footer></footer>
+
+        <script src="main.js"></script>
+    </body>
+</html>
