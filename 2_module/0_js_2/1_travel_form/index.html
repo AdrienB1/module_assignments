@@ -6,6 +6,8 @@
         <title>Travel Form</title>
         <meta name="Adrien" content="Travel Form" />
         <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -14,29 +16,31 @@
         </header>
         <main class="formHolder">
             <form name="travelForm" id="myForm">
-                <div class="nameSection">
+                <div class="nameSection formSection">
                     <label>First Name: </label>
                     <input
                         type="text"
                         name="firstName"
-                        class="firstNameInput"
+                        class="firstNameInput inputBox"
+                        required
                     />
 
                     <label>Last Name: </label>
-                    <input type="text" name="lastName" class="lastNameInput" />
+                    <input type="text" name="lastName" class="lastNameInput inputBox" required/>
                 </div>
-                <div class="ageSection">
-                    <label>Age: </label>
-                    <input type="number" name="age" class="ageInput" />
+                <div class="ageSection formSection">
+                    <label class="ageLabel">Age: </label>
+                    <input type="number" name="age" class="ageInput inputBox" required/>
                 </div>
-                <div class="genderSection">
+                <div class="genderSection formSection">
                     <p>Gender:</p>
                     <label>Male</label>
                     <input
                         type="radio"
                         name="gender"
-                        class="genderInput"
+                        class="genderInput genderOne"
                         value="male"
+                        required
                     />
                     <label>Female</label>
                     <input
@@ -46,9 +50,9 @@
                         value="female"
                     />
                 </div>
-                <div class="locationSection">
+                <div class="locationSection formSection">
                     <label>Where are you going?</label>
-                    <select name="location" class="locationInput">
+                    <select name="location" class="locationInput" required>
                         <option value="Rome">Rome</option>
                         <option value="The Moon">The Moon</option>
                         <option value="Tokyo">Tokyo</option>
@@ -59,23 +63,23 @@
                         <option value="The Carribean">The Carribean</option>
                     </select>
                 </div>
-                <div class="foodSection">
+                <div class="foodSection formSection">
                     <p>Dietary Restrictions (check all that apply):</p>
-                    <label>Pescatarian:</label>
+                    <label>Pescatarian</label>
                     <input
                         type="checkbox"
                         name="diet"
                         class="dietInput"
                         value="pescatarian"
                     />
-                    <label>Vegetarian: </label>
+                    <label>Vegetarian</label>
                     <input
                         type="checkbox"
                         name="diet"
                         class="dietInput"
                         value="vegetarian"
                     />
-                    <label>Vegan: </label>
+                    <label>Vegan</label>
                     <input
                         type="checkbox"
                         name="diet"
@@ -89,13 +93,16 @@
                         class="dietInput"
                         value="Halaal"
                     />
-                    <label>Anything Goes: </label>
+                    <label>Anything Goes</label>
                     <input
                         type="checkbox"
                         name="diet"
                         class="dietInput"
                         value="anything goes"
                     />
+                </div>
+                <div class="submitSection">
+                    <input type="submit" class="submitButton"/>
                 </div>
             </form>
         </main>

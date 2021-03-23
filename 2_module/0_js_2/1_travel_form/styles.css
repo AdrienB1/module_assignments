@@ -1,0 +1,125 @@
+
+/* Main Sections */
+
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Noto Sans', sans-serif;;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    background-color: #023059;
+    color: white;
+    height: 85px;
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    left: 0;
+}
+
+.formHolder {
+    margin: 0;
+    padding: 10px;
+    padding-left: 15px;
+    height: 60%;
+    width: 40%;
+    margin-top: 10%;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: #73A2BF;
+}
+
+form {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Form Sections */
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.formSection {
+    width: 100%;
+}
+
+.nameSection {
+
+}
+
+.firstNameInput {
+    margin-right: 10%;
+}
+
+.ageSection {
+
+}
+
+.ageLabel {
+    margin-right: 51px;
+}
+
+.genderSection {
+
+}
+
+.genderOne {
+    margin-right: 20px;
+}
+
+.locationSection {
+
+}
+
+.foodSection {
+
+}
+
+.dietInput {
+    margin-right: 20px;
+}
+
+.inputBox {
+    border-radius: 4px;
+    border: 1px solid black;
+    height: 20px;
+    outline: none;
+}
+
+.submitButton {
+    height: 30px;
+    width: 120px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    background-color: #F2CAA7;
+}
+
+.locationInput {
+    height: 22px;
+    outline: none;
+    border-radius: 4px;
+}
