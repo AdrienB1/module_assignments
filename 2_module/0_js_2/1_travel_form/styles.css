@@ -41,6 +41,7 @@ header {
     border: 1px solid black;
     border-radius: 8px;
     background-color: #73a2bf;
+    box-shadow: 0 0 6px 2px grey;
 }
 
 form {
@@ -94,7 +95,8 @@ p {
     border-radius: 4px;
     border: none;
     outline: none;
-    background-color: #f2caa7;
+    background-color: #35478C;
+    color: white;
 }
 
 .locationInput {
