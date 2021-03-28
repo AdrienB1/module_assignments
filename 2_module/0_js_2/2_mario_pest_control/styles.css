@@ -1,9 +1,31 @@
-/* ----- small style reset ----- */
+/* <><><><><><><><><><><><><><><><><><><>
+Color Codes
+---------------------
+Mario Red: #FE0002
+Mario Blue: #0001FC
+Mario Tan: #FFD987
+Mario Brown: #6A0400
+---------------------
+Darker Red One: #BF1616
+Darker Red Two: #931111
+Darker Red Three: #790000
+Darker Red Four: #600000
+Darker Red Five: #420000
+---------------------
+Light Grey One: #F2F2F2
+Light Grey Two: #D9D9D9
+Light Grey Three: #BFBFBF
+Light Grey Four: #737373
+Light Grey Five: #404040
+<><><><><><><><><><><><><><><><><><><> */ 
 
+
+/* ----- small style reset ----- */
 * {
+    font-family: 'Roboto', sans-serif;
 	vertical-align: baseline;
+    list-style-type: none;
 	font-weight: inherit;
-	font-family: inherit;
 	font-style: inherit;
 	font-size: 100%;
 	border: 0 none;
@@ -12,3 +34,529 @@
 	margin: 0;
 	}
 
+
+/* ----- body/html size ----- */
+html {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    background-image: url(/images/background/backgroundImageTwoMediumGrey.png);
+    background-attachment: fixed;
+    z-index: 0;
+}
+
+
+/* -------------------- for phone screen size -------------------- */
+
+/* ----- header ----- */
+header {
+    background-color: #FE0002;
+    height: 180px;
+    position: fixed;
+    z-index: 999;
+    right: 0;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 4px solid #BF1616;
+    box-shadow: 0 0 7px 5px rgba(115, 115, 115, 0.6);
+}
+
+#headerIcon {
+    height: 130px;
+    width: auto;
+}
+
+.title {
+    font-size: 80px;
+    font-weight: 500;
+    color: white;
+}
+
+
+/* ----- main content section ----- */
+.mainSpace {
+    width: 100%;
+    height: auto;
+    padding-top: 250px;
+    padding-bottom: 230px;
+}
+
+.listContainer {
+    background-color: white;
+    z-index: 1;
+    width: 85%;
+    height: auto;
+    margin: auto;
+    border: 1px solid #BFBFBF;
+    border-radius: 6px;
+    box-shadow: 1px 1px 6px 3px rgba(191, 191, 191, 0.6);
+}
+
+.listHead {
+    width: 100%;
+    height: 80px;
+    background-color: #BF1616;
+    border-bottom: 3px solid #931111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px 6px 0 0;
+}
+
+.listTitle {
+    font-weight: 400;
+    font-size: 35px;
+    color: white;
+}
+
+.listFormContainer {
+    width: auto;
+    height: auto;
+    padding: 33px;
+}
+
+
+/* ----- list items ----- */
+.baddieListItem {
+    background-color: #F2F2F2;
+    margin-bottom: 40px;
+    width: 100%;
+    height: 250px;
+    border-radius: 20px;
+}
+
+.baddieNameContainer {
+    background-color: #990f0f;
+    border-bottom: 2px solid #790000;
+    border-radius: 20px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h5 {
+    font-weight: 300;
+    color: white;
+    font-size: 22px;
+}
+
+.listItemSideways {
+    width: 100%;
+    height: 210px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.badImage {
+    height: 190px;
+    width: auto;
+}
+
+.priceAndInputDiv {
+    height: 190px;
+    width: 40%;
+}
+
+.priceContainer {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.priceSpan {
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.priceIconSpan {
+    font-size: 50px;
+    font-weight: 400;
+    justify-content: center;
+    align-items: center;
+}
+
+.priceIcon {
+    height: 45px;
+    width: auto;
+}
+
+.inputContainer {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.numberInput {
+    width:85%;
+    height: 55%;
+    font-size: 32px;
+    text-align: center;
+    border: 1px solid #F2F2F2;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+::placeholder {
+    color: #737373;
+}
+
+
+/* ----- total list item ----- */
+.totalListItem {
+    width: 100%;
+    height: 180px;
+    margin-bottom: 15px;
+    border-radius: 35px;
+    background-color: #D9D9D9;
+}
+
+.totalSpan {
+    color: white;
+    font-size: 32px;
+    width: 100%;
+    height: 70px;
+    border-radius: 35px;
+    background-color: #FE0002;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.totalDisplaySpan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 105px;
+    font-size: 60px;
+}
+
+.totalIcon {
+    height: 80px;
+    width: auto;
+    margin-left: 25px;
+}
+
+
+/* ----- footer ----- */
+footer {
+    background-color: #BFBFBF;
+    border-top: 4px solid #737373;
+    height: 160px;
+    width: auto;
+    position: fixed;
+    z-index: 888;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.information {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    color: #404040;
+}
+
+.emailBox {
+    width: 29%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.websiteBox {
+    width: 35%;
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-left: 1px solid #737373;
+    border-right: 1px solid #737373;
+}
+
+.addressBox {
+    width: 29%;
+    height: 100%;
+    text-align: left;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* ------------------------- media queries ------------------------- */
+
+/* ---------- media query for tablet ---------- */
+@media only screen and (min-width: 500px) and (max-width: 1199px) {
+
+    header {
+        height: 140px;
+    }
+
+    #headerIcon {
+        height: 110px;
+        width: auto;
+    }
+    
+    .title {
+        font-size: 70px;
+        font-weight: 500;
+        color: white;
+    }
+
+    .mainSpace {
+        width: 100%;
+        height: auto;
+        padding-top: 190px;
+        padding-bottom: 150px;
+    }
+
+    footer {
+        background-color: #BFBFBF;
+        border-top: 4px solid #737373;
+        height: 100px;
+        width: auto;
+        position: fixed;
+        z-index: 888;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    
+    .information {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 18px;
+        color: #404040;
+    }
+}
+
+/* ---------- media query for computer ---------- */
+@media only screen and (min-width: 1200px) {
+
+    /* -------- header & footer -------- */
+    header {
+        height: 85px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #headerIcon {
+        height: 73px;
+        width: auto;
+        margin-right: 20px;
+    }
+    
+    .title {
+        font-size: 50px;
+        font-weight: 500;
+        color: white;
+    }
+
+    footer {
+        background-color: #BFBFBF;
+        border-top: 4px solid #737373;
+        height: 50px;
+        width: auto;
+        position: fixed;
+        z-index: 888;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    
+    .information {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 10px;
+        color: #404040;
+    }
+
+    /* ----- main content section ----- */
+    .mainSpace {
+        width: 100%;
+        height: auto;
+        padding-top: 150px;
+        padding-bottom: 120px;
+    }
+
+.listContainer {
+    background-color: white;
+    z-index: 1;
+    width: 40%;
+    height: auto;
+    margin: auto;
+    border: 1px solid #BFBFBF;
+    border-radius: 6px;
+    box-shadow: 1px 1px 6px 3px rgba(191, 191, 191, 0.6);
+}
+
+.listHead {
+    width: 100%;
+    height: 50px;
+    background-color: #BF1616;
+    border-bottom: 3px solid #931111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px 6px 0 0;
+}
+
+.listTitle {
+    font-weight: 400;
+    font-size: 29px;
+    color: white;
+}
+
+.listFormContainer {
+    width: auto;
+    height: auto;
+    padding: 33px;
+}
+
+
+/* ----- list items ----- */
+.baddieListItem {
+    background-color: #F2F2F2;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.baddieNameContainer {
+    background-color: #990f0f;
+    border-bottom: 2px solid #790000;
+    border-radius: 15px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h5 {
+    font-weight: 300;
+    color: white;
+    font-size: 20px;
+}
+
+.listItemSideways {
+    width: 100%;
+    height: 170px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.badImage {
+    height: 150px;
+    width: auto;
+}
+
+.priceAndInputDiv {
+    height: 150px;
+    width: 40%;
+}
+
+.priceContainer {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.priceSpan {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.priceIconSpan {
+    font-size: 33px;
+    font-weight: 400;
+    justify-content: center;
+    align-items: center;
+}
+
+.priceIcon {
+    height: 28px;
+    width: auto;
+}
+
+.inputContainer {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.numberInput {
+    width:85%;
+    height: 45%;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid #F2F2F2;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+::placeholder {
+    color: #737373;
+}
+
+
+/* ----- total list item ----- */
+.totalListItem {
+    width: 100%;
+    height: 140px;
+    margin-bottom: 5px;
+    border-radius: 35px;
+    background-color: #D9D9D9;
+}
+
+.totalSpan {
+    color: white;
+    font-size: 32px;
+    width: 100%;
+    height: 45px;
+    border-radius: 20px;
+    background-color: #FE0002;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.totalDisplaySpan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95px;
+    font-size: 50px;
+}
+
+.totalIcon {
+    height: 70px;
+    width: auto;
+    margin-left: 25px;
+}
+}

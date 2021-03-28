@@ -5,107 +5,135 @@
         <meta charset="utf-8" />
         <title>Mario Pest Control</title>
         <meta name="Adrien" content="Mario Pest Control" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles.css" />
     </head>
 
     <body>
         <header>
+            <div class="headImageContainer">
+                <img id="headerIcon" src="/images/icons/marioIconWhite.png" alt="A white mushroom logo.">
+            </div>
             <h1 class="title">
                 Mario Pest Control
             </h1>
         </header>
         <main class="mainSpace">
             <section class="listContainer">
+                <div class="listHead">
+                    <h2 class="listTitle">
+                        Enter Pests Caught Below!
+                    </h2>
+                </div>
                 <form name="badForm" class="listFormContainer" id="listForm">
                     <ul class="baddieList">
-                        <li class="goombaListItem">
-                            <div class="imageContainer imgOne">
-                                <img id="goombaImage" src="/images/goomba.png" alt="An image of a goomba running.">
-                            </div>
+                        <li class="goombaListItem baddieListItem">
                             <div class="baddieNameContainer nameOne">
                                 <h5>Goomba</h5>
                             </div>
-                            <div class="priceContainer priceOne">
-                                <span class="priceSpan">
-                                    5
-                                </span>
-                                <span class="priceIconSpan">
-                                    <img class="priceIcon" src="/images/coin.png" alt="Gold coin icon.">
-                                </span>
-                            </div>
-                            <div class="inputContainer">
-                                <input type="text" name="goombaInput" id="goombaInputBox" class="textInput inputOne" placeholder="Goombas Caught?">
+                            <div class="listItemSideways">
+                                <div class="imageContainer imgOne">
+                                    <img id="goombaImage" src="/images/goomba.png" alt="An image of a goomba running." class="badImage">
+                                </div>
+                                <div class="priceAndInputDiv">
+                                    <div class="priceContainer priceOne">
+                                        <span class="priceSpan">
+                                            Worth:
+                                        </span>
+                                        <span class="priceIconSpan">
+                                            5
+                                            <img class="priceIcon" src="/images/icons/coin.png" alt="Gold coin icon.">
+                                        </span>
+                                    </div>
+                                    <div class="inputContainer">
+                                        <input type="number" name="goombaInput" id="goombaInputBox" class="numberInput inputOne" placeholder="Number Caught">
+                                    </div>
+                                </div>
                             </div>
                         </li>
-                        <li class="bobombListItem">
-                            <div class="imageContainer imgTwo">
-                                <img id="bobombImage" src="/images/bobOmb.png" alt="An image of a Bob-omb sitting peacefully.">
-                            </div>
+                        <li class="bobombListItem baddieListItem">
                             <div class="baddieNameContainer nameTwo">
                                 <h5>Bob-omb</h5>
                             </div>
-                            <div class="priceContainer priceTwo">
-                                <span class="priceSpan">
-                                    7
-                                </span>
-                                <span class="priceIconSpan">
-                                    <img class="priceIcon" src="/images/coin.png" alt="Gold coin icon.">
-                                </span>
-                            </div>
-                            <div class="inputContainer">
-                                <input type="text" name="bobombInput" id="bobombInputBox" class="textInput inputTwo" placeholder="Bob-ombs Caught?">
+                            <div class="listItemSideways">
+                                <div class="imageContainer imgTwo">
+                                    <img id="bobombImage" src="/images/bobOmb.png" alt="An image of a Bob-omb sitting peacefully." class="badImage">
+                                </div>
+                                <div class="priceAndInputDiv">
+                                    <div class="priceContainer priceTwo">
+                                        <span class="priceSpan">
+                                            Worth:
+                                        </span>
+                                        <span class="priceIconSpan">
+                                            7
+                                            <img class="priceIcon" src="/images/icons/coin.png" alt="Gold coin icon.">
+                                        </span>
+                                    </div>
+                                    <div class="inputContainer">
+                                        <input type="number" name="bobombInput" id="bobombInputBox" class="numberInput inputTwo" placeholder="Number Caught">
+                                    </div>
+                                </div>
                             </div>
                         </li>
-                        <li class="cheepcheepListItem">
-                            <div class="imageContainer imgThree">
-                                <img id="cheepcheepImage" src="/images/cheepCheep.png" alt="An image of a Cheep-cheep looking confused.">
-                            </div>
+                        <li class="cheepcheepListItem baddieListItem">
                             <div class="baddieNameContainer nameThree">
                                 <h5>Cheep-cheep</h5>
                             </div>
-                            <div class="priceContainer priceThree">
-                                <span class="priceSpan">
-                                    11
-                                </span>
-                                <span class="priceIconSpan">
-                                    <img class="priceIcon" src="/images/coin.png" alt="Gold coin icon.">
-                                </span>
-                            </div>
-                            <div class="inputContainer">
-                                <input type="text" name="cheepcheepInput" id="cheepcheepInputBox" class="textInput inputThree" placeholder="Cheep-cheeps Caught?">
+                            <div class="listItemSideways">
+                                <div class="imageContainer imgThree">
+                                    <img id="cheepcheepImage" src="/images/cheepCheep.png" alt="An image of a Cheep-cheep looking confused." class="badImage">
+                                </div>
+                                <div class="priceAndInputDiv">
+                                    <div class="priceContainer priceThree">
+                                        <span class="priceSpan">
+                                            Worth:
+                                        </span>
+                                        <span class="priceIconSpan">
+                                            11
+                                            <img class="priceIcon" src="/images/icons/coin.png" alt="Gold coin icon.">
+                                        </span>
+                                    </div>
+                                    <div class="inputContainer">
+                                        <input type="number" name="cheepcheepInput" id="cheepcheepInputBox" class="numberInput inputThree" placeholder="Number Caught">
+                                    </div>
+                                </div>
                             </div>
                         </li>
                         <li class="totalListItem">
                             <div class="totalContainer">
-                                <span class="totalSpan">
+                                <div class="totalSpan">
                                     <h4 class="totalText">Total Coins Earned:</h4>
+                                </div>
+                                <div class="totalDisplaySpan">
                                     <h4 class="totalDisplaySpan">0</h4>
-                                </span>
+                                    <img class="totalIcon" src="/images/icons/coin.png" alt="Gold coin icon.">
+                                </div>
                             </div>
                         </li>
-                        </ul>
+                    </ul>
                 </form>
             </section>
         </main>
         <footer class="information">
-            <p class="emailBox">
+            <div class="emailBox">
                 <h3 class="email">
                     mario@plumb4lyfe.com
                 </h3>
-            </p>
-            <p class="websiteBox">
+            </div>
+            <div class="websiteBox">
                 <h3 class="website">
                     mariopestcontrol.com
                 </h3>
-            </p>
-            <p class="addressBox">
+            </div>
+            <div class="addressBox">
                 <h3>
-                    Mario<br>
+                    Mario P.<br>
                     2021 Main St.<br>
                     Suite 4000<br>
-                    Mushroom Kingdom, NI. 32720
+                    Mushroom Kingdom
                 </h3>
-            </p>
+            </div>
         </footer>
         <script src="main.js"></script>
     </body>
