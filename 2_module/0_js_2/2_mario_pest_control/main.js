@@ -18,7 +18,6 @@ const inputThree = document.getElementById("cheepcheepInputBox")
 //all input boxes array
 const allInputs = document.querySelectorAll(".numberInput")
 
-
 // ------------------------------ style event listeners ------------------------------
 
 inputOne.addEventListener("focus", inputGlow)
@@ -28,14 +27,11 @@ inputTwo.addEventListener("blur", removeInputGlow)
 inputThree.addEventListener("focus", inputGlow)
 inputThree.addEventListener("blur", removeInputGlow)
 
-
 // ------------------------------ input and display total event listeners ------------------------------
 
 inputOne.addEventListener("change", mathGuy)
 inputTwo.addEventListener("change", mathGuy)
 inputThree.addEventListener("change", mathGuy)
-
-
 
 // ------------------------------ functions ------------------------------
 
@@ -44,7 +40,7 @@ function inputGlow() {
 }
 
 function removeInputGlow() {
-    for(i = 0; i < allInputs.length; i++) {
+    for (i = 0; i < allInputs.length; i++) {
         allInputs[i].style.boxShadow = "none"
     }
 }
