@@ -2,10 +2,10 @@
 const clickCountDisplay = document.querySelector(".clickCountSpan")
 const timerDisplay = document.querySelector(".timeSpan")
 const clickSpace = document.querySelector("body")
-let savedClicks = ""
+let savedClicks = 0
 
 //check for saved click count and set after refresh to preserve user data using web storage
-if (isNaN(Number(savedClicks)) == false) {
+if (isNaN(Number(sessionStorage.getItem(savedClicks))) == false) {
     clickCountDisplay.innerHTML = sessionStorage.getItem(savedClicks)
 }
 
@@ -15,7 +15,7 @@ if (isNaN(Number(document.querySelector(".clickCountSpan").innerHTML))) {
     clickCountDisplay.style.color = "grey"
     //if it is, set click count to the value of click count display + 1
 } else {
-    clickCountDisplay.style.color = "white"
+    clickCountDisplay.style.color = "black"
 }
 
 //reset a glabal "has clicked at least once" variable to false so the timer doesn't start
@@ -62,7 +62,7 @@ function countClick() {
         clickCountDisplay.style.color = "grey"
         //if it is, set click count to the value of click count display + 1
     } else {
-        clickCountDisplay.style.color = "white"
+        clickCountDisplay.style.color = "black"
     }
 }
 
@@ -74,7 +74,7 @@ function timeStart() {
     //if false, run the timer code
     if (hasClicked == false) {
         //set time left color to white and to 30 seconds
-        timerDisplay.style.color = "white"
+        timerDisplay.style.color = "black"
         timerDisplay.innerHTML = time + unit
         //declare a variable that will use set interval to run the timer function every second
         const timerIntervalVar = setInterval(timer, 1000)
