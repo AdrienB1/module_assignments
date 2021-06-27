@@ -73,6 +73,10 @@ body {
     flex-direction: column;
 }
 
+.clickCountSpan {
+    color: grey;
+}
+
 .clickCounterContainer {
     width: 50%;
     height: auto;
@@ -81,6 +85,10 @@ body {
     border-radius: 5px;
     font-size: 28px;
     padding: 8px;
+}
+
+.timeSpan {
+    color: grey;
 }
 
 .timerContainer {
@@ -118,5 +126,5 @@ body {
     height: auto;
     margin: 14px;
     font-weight: 200;
-    color: #D9A918;
+    color: white;
 }
