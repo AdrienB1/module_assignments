@@ -137,3 +137,7 @@ function multiplyFunction(event) {
     event.target.numberOne.value = ""
     event.target.numberTwo.value = ""
 }
+
+/* I remember this code very well! I left notes above so reading through 
+and understanding the work I did was easy, added comment to 
+commit for visibility for self */
