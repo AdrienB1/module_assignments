@@ -58,6 +58,12 @@ console.log(
 // 4) Given an array of people objects, return a new array that has filtered out all those who don't belong to the club.
 function peopleWhoBelongToTheIlluminati(arr) {
     // your code here
+    const result = arr.filter(function(object) {
+        if (object.member == true) {
+            return true
+        }
+    })
+    return result
 }
 // test
 console.log(
