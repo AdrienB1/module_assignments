@@ -43,10 +43,14 @@ console.log(capitalizeNames(["john", "JACOB", "jinGleHeimer", "schmidt"]))
 // ["John", "Jacob", "Jingleheimer", "Schmidt"]
 
 
-/* 
+
 // 4) Make an array of strings of the names
 function namesOnly(arr) {
     // your code here
+    const resultFour = arr.map(function (object) {
+        return object.name
+    })
+    return resultFour
 }
 
 console.log(
@@ -75,6 +79,8 @@ console.log(
 )
 // ["Angelina Jolie", "Eric Jones", "Paris Hilton", "Kayne West", "Bob Ziroll"]
 
+
+/* 
 // 5) Make an array of strings of the names saying whether or not they can go to The Matrix
 function makeStrings(arr) {
     // your code here
@@ -109,6 +115,8 @@ console.log(
 // "Paris Hilton is under age!!",
 // "Kayne West is under age!!",
 // "Bob Ziroll can go to The Matrix"]
+
+
 
 // 6) Make an array of the names in h1's, and the ages in h2's
 function readyToPutInTheDOM(arr) {
