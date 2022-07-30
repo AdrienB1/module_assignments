@@ -126,11 +126,15 @@ console.log(
 
 
 
-/* // 6) Make an array of the names in h1's, and the ages in h2's
+// 6) Make an array of the names in h1's, and the ages in h2's
 function readyToPutInTheDOM(arr) {
     // your code here
-    
+    const resultSix = arr.map(function (object) {
+        return "<h1>" + object.name + "</h1>" + "<h2>" + object.age + "</h2>"
+    })
+    return resultSix
 }
+
 console.log(
     readyToPutInTheDOM([
         {
@@ -160,5 +164,5 @@ console.log(
 // "<h1>Paris Hilton</h1><h2>5</h2>",
 // "<h1>Kayne West</h1><h2>16</h2>",
 // "<h1>Bob Ziroll</h1><h2>100</h2>"]
- */
+
 
