@@ -4,8 +4,8 @@
 // 1) Given an array of numbers, return a new array that has only the numbers that are 5 or greater.
 function fiveAndGreaterOnly(arr) {
     // your code here
-    const result = arr.filter(function(num) {
-        if (num % 2 === 0) {
+    const result = arr.filter(function(num){
+        if (num >= 5) {
             return true
         }
     })
@@ -19,6 +19,12 @@ console.log(fiveAndGreaterOnly([3, 6, 8, 2])) /// [6, 8]
 // 2) Given an array of numbers, return a new array that only includes the even numbers.
 function evensOnly(arr) {
     // your code here
+    const result = arr.filter(function(num) {
+        if (num % 2 === 0) {
+            return true
+        }
+    })
+    return result
 }
 // test
 console.log(evensOnly([3, 6, 8, 2])) /// [6, 8, 2]
