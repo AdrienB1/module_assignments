@@ -85,6 +85,12 @@ console.log(
 // 5) Make a filtered list of all the people who are old enough to see The Matrix (older than 18)
 function ofAge(arr) {
     // your code here
+    const result = arr.filter(function(object) {
+        if (object.age > 18) {
+            return true
+        }
+    })
+    return result
 }
 // test
 console.log(
