@@ -26,16 +26,24 @@ function stringItUp(arr) {
 
 console.log(stringItUp([2, 5, 100]))
 // ["2", "5", "100"]
-/* 
+
+
+
 // 3) Capitalize the first letter of each name and make the rest of the characters lowercase
 function capitalizeNames(arr) {
     // your code here
+    const resultThree = arr.map(function (name) {
+        return name.charAt(0).toUpperCase() + name.slice(1).toLowerCase()
+    })
+    return resultThree
 }
 
 console.log(capitalizeNames(["john", "JACOB", "jinGleHeimer", "schmidt"]))
 // Output:
 // ["John", "Jacob", "Jingleheimer", "Schmidt"]
 
+
+/* 
 // 4) Make an array of strings of the names
 function namesOnly(arr) {
     // your code here
