@@ -15,7 +15,7 @@ function fiveAndGreaterOnly(arr) {
 console.log(fiveAndGreaterOnly([3, 6, 8, 2])) /// [6, 8]
 
 
-/* 
+
 // 2) Given an array of numbers, return a new array that only includes the even numbers.
 function evensOnly(arr) {
     // your code here
@@ -87,4 +87,3 @@ console.log(
 // =>
 //[ { name: 'Angelina Jolie', age: 80 },
 //  { name: 'Bob Ziroll', age: 100 } ]
- */
