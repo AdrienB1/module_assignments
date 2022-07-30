@@ -80,10 +80,18 @@ console.log(
 // ["Angelina Jolie", "Eric Jones", "Paris Hilton", "Kayne West", "Bob Ziroll"]
 
 
-/* 
+
 // 5) Make an array of strings of the names saying whether or not they can go to The Matrix
 function makeStrings(arr) {
     // your code here
+    const resultFive = arr.map(function (object) {
+        if (object.age > 18) {
+            return object.name + " can go to the Matrix"
+        } else {
+            return object.name + " is under age!!"
+        }
+    })
+    return resultFive
 }
 
 console.log(
@@ -118,9 +126,10 @@ console.log(
 
 
 
-// 6) Make an array of the names in h1's, and the ages in h2's
+/* // 6) Make an array of the names in h1's, and the ages in h2's
 function readyToPutInTheDOM(arr) {
     // your code here
+    
 }
 console.log(
     readyToPutInTheDOM([
@@ -152,3 +161,4 @@ console.log(
 // "<h1>Kayne West</h1><h2>16</h2>",
 // "<h1>Bob Ziroll</h1><h2>100</h2>"]
  */
+
