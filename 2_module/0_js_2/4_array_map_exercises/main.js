@@ -18,11 +18,15 @@ console.log(doubleNumbers([2, 5, 100]))
 // 2) Take an array of numbers and make them strings
 function stringItUp(arr) {
     // your code here
+    const resultTwo = arr.map(function (num) {
+        return JSON.stringify(num)
+    })
+    return resultTwo
 }
 
 console.log(stringItUp([2, 5, 100]))
 // ["2", "5", "100"]
-
+/* 
 // 3) Capitalize the first letter of each name and make the rest of the characters lowercase
 function capitalizeNames(arr) {
     // your code here
@@ -131,3 +135,4 @@ console.log(
 // "<h1>Paris Hilton</h1><h2>5</h2>",
 // "<h1>Kayne West</h1><h2>16</h2>",
 // "<h1>Bob Ziroll</h1><h2>100</h2>"]
+ */
