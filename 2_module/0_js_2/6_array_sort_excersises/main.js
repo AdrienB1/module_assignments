@@ -18,6 +18,10 @@ console.log(leastToGreatest([1, 3, 5, 2, 90, 20]))
 // 2) Sort an array from largest number to smallest
 function greatestToLeast(arr) {
     // your code here
+    arr.sort(function(a, b) {
+        return b - a
+    })
+    return arr
 }
 
 console.log(greatestToLeast([1, 3, 5, 2, 90, 20])) 
