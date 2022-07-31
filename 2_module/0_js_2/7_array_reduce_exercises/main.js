@@ -19,6 +19,11 @@ console.log(total([1, 2, 3]))
 // 2) Turn an array of numbers into a long string of all those numbers
 function stringConcat(arr) {
     // your code here
+    const result = arr.reduce(function(final, num) {
+        final += num.toString()
+        return final
+    }, "")
+    return result
 }
 
 console.log(stringConcat([1, 2, 3])) 
