@@ -60,8 +60,11 @@ Using the provided `peopleArray` (bottom of this article), write a function th
 function sortedOfAge(arr) {
     // Your code here
     const result = arr.filter(function(object) {
-
+        if (object.age > 18) {
+            return true
+        }
     })
+    return result
 }
 
 console.log(sortedOfAge(peopleArray))
