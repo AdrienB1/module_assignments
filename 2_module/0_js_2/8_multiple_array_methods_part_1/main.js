@@ -38,7 +38,6 @@ var peopleArray = [
 ]
 
 
-
 /* 
 You should use multiple array methods to solve these problems. Don't use `for` loops!
 
@@ -94,4 +93,84 @@ console.log(sortedOfAge(peopleArray))
      "<li>Lev Tolstoy is 82</li>"
  ]
  */
+
+
+
+// **Extra Credit**
+
+// - Create another array of one or more individuals and add it to the original array.
+/* var peopleArrayCopyOne = [
+    {
+        firstName: "Sarah",
+        lastName: "Palin",
+        age: 47
+    },
+    {
+        firstName: "Frank",
+        lastName: "Zappa",
+        age: 12
+    },
+    {
+        firstName: "Rick",
+        lastName: "Sanchez",
+        age: 78
+    },
+    {
+        firstName: "Morty",
+        lastName: "Smith",
+        age: 29
+    },
+    {
+        firstName: "Kyle",
+        lastName: "Mooney",
+        age: 27
+    },
+    {
+        firstName: "Pasha",
+        lastName: "Datsyuk",
+        age: 13
+    },
+    {
+        firstName: "Lev",
+        lastName: "Tolstoy",
+        age: 82
+    }
+]
+var peopleToAddOne = [
+    {
+        firstName: "Green",
+        lastName: "Goblin",
+        age: 23
+    }, 
+    {
+        firstName: "Marcy",
+        lastName: "Felis",
+        age: 13
+    }
+]
+
+function addUser(arrOne, arrTwo) {
+    const result = arrTwo.map(function(person) {
+        arrOne.push(person)
+    })
+    return result
+}
+
+console.log(addUser(peopleArrayCopyOne, peopleToAddOne)) */
+
+
+// - Create a function that filters out all people who's last names end with "y" or "a" and save those people in another array.
+
+
+
+
+
+// - Remove the second individual from the array.
+
+
+
+
+
+// - Return the array in reverse order.
+
 
