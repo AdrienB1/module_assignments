@@ -4,10 +4,15 @@
 // 1) Turn an array of numbers into a total of all the numbers
 function total(arr) {
     // your code here
-    const result = arr.reduce(function(final, num))
+    const result = arr.reduce(function(final, num) {
+        final += num
+        return final
+    })
+    return result
 }
 
-console.log(total([1, 2, 3])) // 6
+console.log(total([1, 2, 3])) 
+// 6
 
 
 
@@ -16,7 +21,8 @@ function stringConcat(arr) {
     // your code here
 }
 
-console.log(stringConcat([1, 2, 3])) // "123"
+console.log(stringConcat([1, 2, 3])) 
+// "123"
 
 
 
@@ -39,7 +45,8 @@ var voters = [
     { name: "Jeff", age: 30, voted: true },
     { name: "Zack", age: 19, voted: false }
 ]
-console.log(totalVotes(voters)) // 7
+console.log(totalVotes(voters)) 
+// 7
 
 
 
@@ -56,7 +63,8 @@ var wishlist = [
     { title: "A second Tesla Model S", price: 90000 }
 ]
 
-console.log(shoppingSpree(wishlist)) // 227005
+console.log(shoppingSpree(wishlist)) 
+// 227005
 
 
 
@@ -67,7 +75,8 @@ function flatten(arr) {
 
 var arrays = [["1", "2", "3"], [true], [4, 5, 6]]
 
-console.log(flatten(arrays)) // ["1", "2", "3", true, 4, 5, 6];
+console.log(flatten(arrays)) 
+// ["1", "2", "3", true, 4, 5, 6];
 
 
 
@@ -91,7 +100,8 @@ function voterResults(arr) {
     // your code here
 }
 
-console.log(voterResults(voters)) // Returned value shown below:
+console.log(voterResults(voters)) 
+// Returned value shown below:
 /*
 { numYoungVotes: 1,
   numYoungPeople: 4,
