@@ -88,6 +88,13 @@ console.log(shoppingSpree(wishlist))
 // 5) Given an array of arrays, flatten them into a single array
 function flatten(arr) {
     // your code here
+    const result = arr.reduce(function(final, array) {
+        for (let i = 0; i < array.length; i++) {
+                final.push(array[i])
+        }
+        return final
+    }, [])
+    return result
 }
 
 var arrays = [["1", "2", "3"], [true], [4, 5, 6]]
