@@ -58,6 +58,10 @@ console.log(alphabetical(["dog", "wolf", "by", "family", "eaten"]))
 // 5) Sort the objects in the array by age
 function byAge(arr) {
     // your code here
+    arr.sort(function(a, b){
+        return a.age - b.age
+    })
+    return arr
 }
 
 console.log(
