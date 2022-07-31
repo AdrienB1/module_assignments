@@ -58,17 +58,13 @@ Using the provided `peopleArray` (bottom of this article), write a function th
 */
 
 function sortedOfAge(arr) {
-    // Your code here
-    /* const result = arr.reduce(function(final, person) {
-        final.push()
-    }, []) */
-
-
+    // My filter method code
     const filteredByAge = arr.filter(function(person) {
         if (person.age > 18) {
             return true
         }
     })
+    // My sort by last name code (this was hard)
     const sortedByLastName = filteredByAge.sort(function(a, b) {
         if(a.lastName < b.lastName) {
             return -1
@@ -78,7 +74,12 @@ function sortedOfAge(arr) {
             return 0
         }
     })
-    return sortedByLastName
+    //My reduce code! 
+    const result = sortedByLastName.reduce(function(final, person) {
+        final.push("<li>" + person.firstName + " " + person.lastName + " is " + person.age + "</li>")
+        return final
+    }, [])
+    return result
 }
 
 console.log(sortedOfAge(peopleArray))
