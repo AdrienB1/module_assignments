@@ -65,6 +65,11 @@ console.log(totalVotes(voters))
 // 4) Given an array of all your wishlist items, figure out how much it would cost to just buy everything at once
 function shoppingSpree(arr) {
     // your code here
+    const result = arr.reduce(function(final, item) {
+        final += item.price
+        return final
+    }, 0)
+    return result
 }
 
 var wishlist = [
