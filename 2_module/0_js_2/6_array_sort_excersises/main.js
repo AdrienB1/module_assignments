@@ -32,6 +32,10 @@ console.log(greatestToLeast([1, 3, 5, 2, 90, 20]))
 // 3) Sort an array from shortest string to longest
 function lengthSort(arr) {
     // your code here
+    arr.sort(function(a, b) {
+        return b.length - a.length
+    })
+    return arr
 }
 
 console.log(lengthSort(["dog", "wolf", "by", "family", "eaten"])) 
