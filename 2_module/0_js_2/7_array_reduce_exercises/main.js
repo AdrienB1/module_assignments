@@ -122,6 +122,34 @@ var voters = [
 
 function voterResults(arr) {
     // your code here
+    const result = arr.reduce(function(final, voter) {
+        if (voter.age <= 28) {
+            final.numYoungPeople++
+            if (voter.voted == true) {
+                final.numYoungVotes++
+            }
+            return final
+        } else if (voter.age > 28 && voter.age <= 35) {
+            final.numMidsPeople++
+            if (voter.voted == true) {
+                final.numMidVotesPeople++
+            }
+            return final
+        } else {
+            final.numOldsPeople++
+            if (voter.voted == true) {
+                final.numOldVotesPeople++
+            }
+            return final
+        }
+    }, {numYoungVotes: 0,
+        numYoungPeople: 0,
+        numMidVotesPeople: 0,
+        numMidsPeople: 0,
+        numOldVotesPeople: 0,
+        numOldsPeople: 0}
+    )
+    return result
 }
 
 console.log(voterResults(voters)) 
