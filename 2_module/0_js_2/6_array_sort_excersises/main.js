@@ -4,7 +4,10 @@
 // 1) Sort an array from smallest number to largest
 function leastToGreatest(arr) {
     // your code here
-    return a + b
+    arr.sort(function(a, b) {
+        return a - b
+    })
+    return arr
 }
 
 console.log(leastToGreatest([1, 3, 5, 2, 90, 20])) 
