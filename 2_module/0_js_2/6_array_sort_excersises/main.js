@@ -44,7 +44,11 @@ console.log(lengthSort(["dog", "wolf", "by", "family", "eaten"]))
 
 
 // 4) Sort an array alphabetically
-function alphabetical(arr) {}
+function alphabetical(arr) {
+    // your code here
+    arr.sort()
+    return arr
+}
 
 console.log(alphabetical(["dog", "wolf", "by", "family", "eaten"])) 
 // ["by", "dog", "eaten", "family", "wolf"]
