@@ -26,10 +26,35 @@ catch(err) {
 var user = { username: "sam", password: "123abc" }
 function login(username, password) {
     //check credentials
+    if (username !== user.username) {
+        throw new Error("Username not found")
+    } else if (password !== user.password) {
+        throw new Error("Password does not match")
+    }
+    console.log("Login Successful!")
 }
-
 
 //2b) Call the login function within a try block. In one instance use the correct credentials, and in another use incorrect ones.
 //Make sure you see the appropriate message!
+try {
+    login("sam", "123abc")
+}
+catch(err) {
+    console.log(err)
+}
 
+//UN incorrect
+try {
+    login("sammy", "123abc")
+}
+catch(err) {
+    console.log(err)
+}
 
+//Password incorrect
+try {
+    login("sam", "123abcdefghijk")
+}
+catch(err) {
+    console.log(err)
+}
