@@ -39,9 +39,7 @@ body {
     width: 75%;
     height: 33%;
     margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    background-color: aliceblue;
 }
 
 /* ---- box styling ---- */
@@ -49,10 +47,22 @@ body {
     background-color: #5D8A66;
     height: 160px;
     width: 160px;
-    margin: auto;
     border: 1px solid black;
     border-radius: 6px;
     box-shadow: 4px 4px 9px 1px #506266;
+    position: relative;
+    margin: 0;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform:translateY(-50%)
+}
+
+.boxLeft {
+
+}
+
+.boxRight {
+    
 }
 
 /* ---- hover styles & transitions ---- */
@@ -68,10 +78,11 @@ body {
 
 /* Box Two */
 #boxTwo {
-    
+    transition: border-radius 1s linear;
 }
 
 #boxTwo:hover {
+    border-radius: 100%;
     
 }
 
