@@ -54,3 +54,59 @@ body {
     border-radius: 6px;
     box-shadow: 4px 4px 9px 1px #506266;
 }
+
+/* ---- hover styles & transitions ---- */
+/* Box One */
+#boxOne {
+    transition: background-color 1s linear, box-shadow 1s linear;
+}
+
+#boxOne:hover {
+    background-color: #F2CB05;
+    box-shadow: 4px 4px 14px 9px #506266;
+}
+
+/* Box Two */
+#boxTwo {
+    
+}
+
+#boxTwo:hover {
+    
+}
+
+/* Box Three */
+#boxThree {
+    
+}
+
+#boxThree:hover {
+    
+}
+
+/* Box Four */
+#boxFour {
+    
+}
+
+#boxFour:hover {
+    
+}
+
+/* Box Five */
+#boxFive {
+    
+}
+
+#boxFive:hover {
+    
+}
+
+/* Box Six */
+#boxSix {
+    
+}
+
+#boxSix:hover {
+    
+}
