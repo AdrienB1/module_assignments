@@ -39,7 +39,7 @@ body {
     width: 75%;
     height: 33%;
     margin: auto;
-    background-color: aliceblue;
+    position: relative;
 }
 
 /* ---- box styling ---- */
@@ -50,19 +50,20 @@ body {
     border: 1px solid black;
     border-radius: 6px;
     box-shadow: 4px 4px 9px 1px #506266;
-    position: relative;
+    position: absolute;
     margin: 0;
     top: 50%;
     -ms-transform: translateY(-50%);
-    transform:translateY(-50%)
+    transform:translateY(-50%);
+    display: inline-block;
 }
 
 .boxLeft {
-
+    left: 80px;
 }
 
 .boxRight {
-    
+    right: 80px;
 }
 
 /* ---- hover styles & transitions ---- */
@@ -78,30 +79,38 @@ body {
 
 /* Box Two */
 #boxTwo {
-    transition: border-radius 1s linear;
+    transition: border-radius 1s linear, height 1s linear, width 1s linear, margin-right 1s linear;
 }
 
 #boxTwo:hover {
     border-radius: 100%;
-    
+    height: 120px;
+    width: 120px;
+    margin-right: 20px;
 }
 
 /* Box Three */
 #boxThree {
-    
+    transition: background-color 2s linear, box-shadow 1s linear, height 1s linear, width 1s linear, margin-left 1s linear;
 }
 
 #boxThree:hover {
-    
+    background-color: #011F26;
+    box-shadow: 2px 2px 5px .5px #506266;
+    height: 100px;
+    width: 100px;
+    margin-left: 30px;
 }
 
 /* Box Four */
 #boxFour {
-    
+    transition: width 2s linear, height 2s linear, margin-right 2s linear;
 }
 
 #boxFour:hover {
-    
+    width: 80px;
+    height: 240px;
+    margin-right: 40px;
 }
 
 /* Box Five */
