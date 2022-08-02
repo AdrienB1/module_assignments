@@ -31,13 +31,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    background-image: linear-gradient(to bottom right, #45214A, #21445B);
 }
 
 /* ----- rows styling/positioning ---- */
 .row {
-    background-color: burlywood;
-    width: 80%;
-    height: 40%;
+    width: 75%;
+    height: 33%;
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -46,8 +46,11 @@ body {
 
 /* ---- box styling ---- */
 .box {
-    background-color: red;
-    height: 70%;
-    width: 35%;
+    background-color: #5D8A66;
+    height: 160px;
+    width: 160px;
     margin: auto;
+    border: 1px solid black;
+    border-radius: 6px;
+    box-shadow: 4px 4px 9px 1px #506266;
 }
