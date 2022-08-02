@@ -115,18 +115,32 @@ body {
 
 /* Box Five */
 #boxFive {
-    
+    transition: opacity 4s ease-out, box-shadow 2s linear, background-color 2s linear, border-radius 2s linear;
 }
 
 #boxFive:hover {
-    
+    opacity: 0.2;
+    box-shadow: none;
+    background-color: #593954;
+    border-radius: 15%;
 }
 
 /* Box Six */
 #boxSix {
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #5D8A66;
+    font-size: 5px;
+    transition: background-color 1s linear, font-size 2s linear, width 1s linear, right 1s linear, box-shadow 500ms linear, border 1s linear;
 }
 
 #boxSix:hover {
-    
+    background-color: #011F26;
+    font-size: 25px;
+    width: 220px;
+    right: 45px;
+    box-shadow: none;
+    border: 8px solid green;
 }
