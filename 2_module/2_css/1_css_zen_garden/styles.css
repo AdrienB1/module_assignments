@@ -180,12 +180,39 @@ h2 {
 
 /* ---- First Main Content Box styles ---- */
 #summaryBox {
-    background-color: aqua;
+    background-color: #fff;
     grid-area: mainOne;
-    height: 800px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
+.summarySub {
+    padding-left: 80px;
+    padding-right: 80px;
+}
 
+.paragraph {
+    margin-top: 16px;
+    font-family: 'Crimson Text', serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 200;
+}
+
+.summaryBoxThree {
+    margin-bottom: 36px;
+}
+
+.summaryBoxOne {
+    margin-top: 36px;
+}
+
+h3 {
+    font-family: 'Julius Sans One', sans-serif;
+    margin-top: 36px;
+}
 
 /* ---- Instruction Section Styles ---- */
 #instructionBox {
