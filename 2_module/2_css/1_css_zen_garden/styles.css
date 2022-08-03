@@ -28,6 +28,23 @@ font-family: 'Libre Baskerville', serif;
     font-family: 'Crimson Text', serif;
 }
 
+/* ---- Body Styles ---- */
+body {
+    background-image: url(media/contours-opaque.png);
+    background-repeat: repeat;
+}
+
+main {
+    background-image: url(media/gridlines.png);
+    background-repeat: repeat;
+}
+
+/* ---- Link Styles ---- */
+
+a {
+    text-decoration: none;
+}
+
 /* ---- Main Containers Positioning Mobile ---- */
 /* ---- Header ---- */
 #headerBox {
@@ -36,14 +53,17 @@ font-family: 'Libre Baskerville', serif;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-image: url(media/huntington.jpg);
+    background-color: #2d6360;
     background-size: cover;
+    background-image: url(media/contours.png), url(media/noise.png), url(media/gridlines.png), url(media/huntington.jpg);
+    background-size: 50%, 50%, 50%, cover;
+    background-attachment: fixed, fixed, fixed, scroll;
 }
 
 #headLogo {
     height: 90px;
     margin-top: 24px;
-    opacity: .6;
+    opacity: .7;
 }
 
 #headTextContainer {
@@ -65,7 +85,7 @@ font-family: 'Libre Baskerville', serif;
 }
 
 .underline {
-    text-decoration: underline;
+    border-bottom: 3px dotted #fff;
 }
 
 h1 {
@@ -78,11 +98,67 @@ h2 {
 }
 
 #navLinkBox {
-    background-color: blue;
     grid-area: headLink;
     position: absolute;
     height: 80px;
     top: 180px;
+}
+
+#navDiv {
+    background-color: rgba(255, 255, 255, 0.25);
+    display: inline;
+    height: 80px;
+    width: calc(100% - (160px));
+    margin-left: 80px;
+    margin-right: 80px;
+    position: absolute;
+    transition: background-color 150ms linear;
+}
+
+#navDiv:hover {
+    background-color: rgba(255, 255, 255, 0.45);
+}
+
+#navDiv:active {
+    background-color: rgba(255, 255, 255, 0.65);
+}
+
+.navText {
+    position: absolute;
+    color: #fff;
+    font-size: 18px;
+    line-height: 80px;
+    width: 100%;
+    text-align: center;
+}
+
+#designNextLeft {
+    width: 80px;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+#designNextRight {
+    width: 80px;
+    height: 80px;
+    right: 0;
+    top: 0;
+    position: absolute;
+    display: inline;
+    text-align: center;
+    line-height: 65px;
+    font-size: 100px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.25);
+    transition: background-color 150ms linear;
+}
+
+#designNextRight:hover {
+    background-color: rgba(255, 255, 255, 0.45);
+}
+
+#designNextRight:active {
+    background-color: rgba(255, 255, 255, 0.65);
 }
 
 /* ---- First Main Content Box styles ---- */
