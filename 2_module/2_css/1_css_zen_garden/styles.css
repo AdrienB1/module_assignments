@@ -19,11 +19,62 @@ font-family: 'Libre Baskerville', serif;
     margin: 0;
 }
 
+/* ---- Fonts ---- */
+.julius {
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.crimson {
+    font-family: 'Crimson Text', serif;
+}
+
 /* ---- Main Containers Positioning Mobile ---- */
+/* ---- Header ---- */
 #headerBox {
-    background-color: red;
     grid-area: header;
-    height: 240px;
+    height: 260px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image: url(media/huntington.jpg);
+    background-size: cover;
+}
+
+#headLogo {
+    height: 90px;
+    margin-top: 24px;
+    opacity: .6;
+}
+
+#headTextContainer {
+    text-align: center;
+    color: #fff;
+}
+
+#headText {
+    margin-left: 15px;
+    margin-top: 60px;
+}
+
+#headTextSub {
+    opacity: .6;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 22px;
 }
 
 #navLinkBox {
@@ -31,23 +82,26 @@ font-family: 'Libre Baskerville', serif;
     grid-area: headLink;
     position: absolute;
     height: 80px;
-    top: 160px;
+    top: 180px;
 }
 
+/* ---- First Main Content Box styles ---- */
 #summaryBox {
     background-color: aqua;
     grid-area: mainOne;
-    height: 600px;
+    height: 800px;
 }
 
 #instructionBox {
     background-color: blueviolet;
     grid-area: mainTwo;
+    height: 600px;
 }
 
 #requirementBox {
     background-color: chartreuse;
     grid-area: mainThree;
+    height: 600px;
 }
 
 #spaceFillerDiv {
@@ -59,21 +113,25 @@ font-family: 'Libre Baskerville', serif;
 #authorBox {
     background-color: chocolate;
     grid-area: authors;
+    height: 180px;
 }
 
 #socialBox {
     background-color: cadetblue;
     grid-area: icons;
+    height: 120px;
 }
 
 #designLinksBox {
     background-color: darkgreen;
     grid-area: designs;
+    height: 350px;
 }
 
 #navigationListBox {
     background-color: darkkhaki;
     grid-area: navList;
+    height: 200px;
 }
 
 .wide {
