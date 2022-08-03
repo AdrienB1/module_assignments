@@ -112,7 +112,7 @@ h2 {
     margin-left: 80px;
     margin-right: 80px;
     position: absolute;
-    transition: background-color 150ms linear;
+    transition: background-color 110ms linear;
 }
 
 #navDiv:hover {
@@ -130,6 +130,12 @@ h2 {
     line-height: 80px;
     width: 100%;
     text-align: center;
+    opacity: .6;
+    transition: opacity 200ms linear;
+}
+
+.navText:hover {
+    opacity: 1;
 }
 
 #designNextLeft {
@@ -150,7 +156,18 @@ h2 {
     font-size: 100px;
     color: #fff;
     background-color: rgba(255, 255, 255, 0.25);
-    transition: background-color 150ms linear;
+    transition: background-color 110ms linear;
+}
+
+.opacityDiv {
+    opacity: .6;
+    height: 80px;
+    width:80px;
+    transition: opacity 200ms linear;
+}
+
+.opacityDiv:hover {
+    opacity: 1;
 }
 
 #designNextRight:hover {
@@ -168,6 +185,9 @@ h2 {
     height: 800px;
 }
 
+
+
+/* ---- Instruction Section Styles ---- */
 #instructionBox {
     background-color: blueviolet;
     grid-area: mainTwo;
