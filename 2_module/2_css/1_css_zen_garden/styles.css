@@ -19,4 +19,73 @@ font-family: 'Libre Baskerville', serif;
     margin: 0;
 }
 
-/* ---- Main Container Positioning Mobile ---- */
+/* ---- Main Containers Positioning Mobile ---- */
+#headerBox {
+    background-color: red;
+    grid-area: header;
+    height: 240px;
+}
+
+#navLinkBox {
+    background-color: blue;
+    grid-area: headLink;
+    position: absolute;
+    height: 80px;
+    top: 160px;
+}
+
+#summaryBox {
+    background-color: aqua;
+    grid-area: mainOne;
+    height: 600px;
+}
+
+#instructionBox {
+    background-color: blueviolet;
+    grid-area: mainTwo;
+}
+
+#requirementBox {
+    background-color: chartreuse;
+    grid-area: mainThree;
+}
+
+#spaceFillerDiv {
+    background-color: deeppink;
+    grid-area: filler;
+    display: none;
+}
+
+#authorBox {
+    background-color: chocolate;
+    grid-area: authors;
+}
+
+#socialBox {
+    background-color: cadetblue;
+    grid-area: icons;
+}
+
+#designLinksBox {
+    background-color: darkgreen;
+    grid-area: designs;
+}
+
+#navigationListBox {
+    background-color: darkkhaki;
+    grid-area: navList;
+}
+
+.wide {
+    width: 100%;
+}
+
+/* ---- Main container Mobile ---- */
+
+#mainBox {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
+}
