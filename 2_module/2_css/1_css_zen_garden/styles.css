@@ -50,6 +50,18 @@ a:visited {
     color: #809b7e;
 }
 
+.instructionLink {
+    color: #0d8ba1;
+}
+
+.instructionLink:hover {
+    text-decoration: underline;
+}
+
+.instructionLink:visited {
+    color: #0d8ba1;
+}
+
 .downloadLink {
     padding-top: 5px;
     padding-bottom: 5.5px;
@@ -228,8 +240,8 @@ h2 {
 .paragraph {
     margin-top: 16px;
     font-family: "Crimson Text", serif;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 16px;
+    line-height: 28px;
     font-weight: 200;
 }
 
@@ -244,15 +256,31 @@ h2 {
 h3 {
     font-family: "Julius Sans One", sans-serif;
     margin-top: 36px;
+    font-size: 20px;
+    font-kerning: 5px;
 }
 
 /* ---- Instruction Section Styles ---- */
 #instructionBox {
-    background-color: blueviolet;
+    background-color: rgba(138,188,159,0.5);
     grid-area: mainTwo;
-    height: 600px;
+    height: auto;
+    background-image: url(/media/contours-opaque.png), url(media/gridlines-opaque.png), url(media/bamboo.png);
+    background-repeat: repeat, repeat, no-repeat;
+    background-size: auto, auto, cover;
+    background-attachment: scroll, scroll, fixed;
 }
 
+.instructionSub {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.instructionTwo {
+    margin-bottom: 36px;
+}
+
+/* ---- Requirement Section Styles ---- */
 #requirementBox {
     background-color: chartreuse;
     grid-area: mainThree;
