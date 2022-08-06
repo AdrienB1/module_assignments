@@ -262,10 +262,11 @@ h3 {
 
 /* ---- Instruction Section Styles ---- */
 #instructionBox {
-    background-color: rgba(138,188,159,0.5);
+    background-color: rgba(138, 188, 159, 0.5);
     grid-area: mainTwo;
     height: auto;
-    background-image: url(/media/contours-opaque.png), url(media/gridlines-opaque.png), url(media/bamboo.png);
+    background-image: url(/media/contours-opaque.png),
+        url(media/gridlines-opaque.png), url(media/bamboo.png);
     background-repeat: repeat, repeat, no-repeat;
     background-size: auto, auto, cover;
     background-attachment: scroll, scroll, fixed;
@@ -282,11 +283,18 @@ h3 {
 
 /* ---- Requirement Section Styles ---- */
 #requirementBox {
-    background-color: chartreuse;
+    background-color: #fff;
     grid-area: mainThree;
-    height: 600px;
+    height: auto;
 }
 
+.requirementSub {
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-bottom: 36px;
+}
+
+/* ---- Space filler Section Styles ---- */
 #spaceFillerDiv {
     background-color: deeppink;
     grid-area: filler;
