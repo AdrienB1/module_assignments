@@ -88,6 +88,19 @@ a:visited {
     background-color: #085866;
 }
 
+.authorLink {
+    color: rgba(255, 255, 255, 0.7);
+    font-style: normal;
+}
+
+.authorLink:visited {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#authorBoxMain p span a:hover {
+    text-decoration: underline;
+}dw
+
 /* ---- Main Containers Positioning Mobile ---- */
 /* ---- Main container Mobile ---- */
 
@@ -293,8 +306,12 @@ h3 {
     padding-right: 80px;
 }
 
+#instructionBox div:first-child {
+    padding-top:10px;
+}
+
 .instructionTwo {
-    margin-bottom: 36px;
+    padding-bottom: 36px;
 }
 
 /* ---- Requirement Section Styles ---- */
@@ -318,10 +335,28 @@ h3 {
 }
 
 /* ---- author Section Styles ---- */
-#authorBox {
-    background-color: chocolate;
+#authorBoxMain {
     grid-area: authors;
-    height: 180px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(media/contours.png), url(media/gridlines.png), url(media/noise.png), url(media/koi.jpg);
+    background-size: auto, auto, auto, cover;
+    background-attachment: fixed, fixed, fixed, scroll;
+    background-repeat: repeat, repeat, repeat, no-repeat;
+}
+
+.authorBox {
+    width: 75%;
+    text-align: center;
+    margin: 50px auto;
+    line-height: 48px;
+    font-size: 26px;
+    padding: 5px;
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.4);
 }
 
 /* ---- Social Section Styles ---- */
@@ -329,6 +364,18 @@ h3 {
     background-color: cadetblue;
     grid-area: icons;
     height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ion-icon {
+    font-size: 30px;
+    margin: auto 30px;
+}
+
+#socialBox a {
+    background-color: aqua;
 }
 
 /* ---- Designs Section Styles ---- */
