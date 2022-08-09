@@ -89,6 +89,22 @@ a:visited {
 }
 
 /* ---- Main Containers Positioning Mobile ---- */
+/* ---- Main container Mobile ---- */
+
+#mainBox {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
+}
+
+/* ---- misc styles affecting many ---- */
+
+.wide {
+    width: 100%;
+}
+
 /* ---- Header ---- */
 #headerBox {
     grid-area: header;
@@ -301,40 +317,32 @@ h3 {
     display: none;
 }
 
+/* ---- author Section Styles ---- */
 #authorBox {
     background-color: chocolate;
     grid-area: authors;
     height: 180px;
 }
 
+/* ---- Social Section Styles ---- */
 #socialBox {
     background-color: cadetblue;
     grid-area: icons;
     height: 120px;
 }
 
+/* ---- Designs Section Styles ---- */
 #designLinksBox {
     background-color: darkgreen;
     grid-area: designs;
     height: 350px;
 }
 
+/* ---- Navigation List Section Styles ---- */
 #navigationListBox {
     background-color: darkkhaki;
     grid-area: navList;
     height: 200px;
 }
 
-.wide {
-    width: 100%;
-}
 
-/* ---- Main container Mobile ---- */
-
-#mainBox {
-    height: auto;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    row-gap: 0;
-}
