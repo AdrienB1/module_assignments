@@ -361,7 +361,7 @@ h3 {
 
 /* ---- Social Section Styles ---- */
 #socialBox {
-    background-color: cadetblue;
+    background-color: #134347;
     grid-area: icons;
     height: 120px;
     display: flex;
@@ -369,13 +369,37 @@ h3 {
     justify-content: center;
 }
 
-ion-icon {
-    font-size: 30px;
-    margin: auto 30px;
+#socialBox a {
+    color:rgba(255, 255, 255, 0.4);
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    border: 3px solid rgba(255, 255, 255, 0.4);
+    transition: background-color 250ms linear, border 250ms linear;
 }
 
-#socialBox a {
-    background-color: aqua;
+#socialBox a:hover {
+    color: #134347;
+    background-color: rgba(255, 255, 255, 0.4);
+    height: 65px;
+    width: 65px;
+    border: none;
+}
+
+ion-icon {
+    font-size: 30px;
+}
+
+.iconHolder {
+    margin: auto 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 80px;
 }
 
 /* ---- Designs Section Styles ---- */
