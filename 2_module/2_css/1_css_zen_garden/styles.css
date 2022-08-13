@@ -3,6 +3,7 @@
 font-family: 'Crimson Text', serif;
 font-family: 'Julius Sans One', sans-serif;
 font-family: 'Libre Baskerville', serif;
+font-family: 'Libre Franklin', sans-serif;
 */
 
 /* ----- small style reset ----- */
@@ -404,9 +405,67 @@ ion-icon {
 
 /* ---- Designs Section Styles ---- */
 #designLinksBox {
-    background-color: darkgreen;
+    background-color: #EDF4F0;
     grid-area: designs;
-    height: 350px;
+}
+
+#designList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#designList > li {
+    width: 50%;
+    height: 88px;
+    border-top: solid 1px #d9e3dc;
+}
+#designList > li:hover {
+    background-image: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%);
+}
+
+.itemName {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 18px 0 18px 26%;
+}
+
+.designName {
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 100;
+    margin-bottom: 4px;
+    color: #1a5952;
+    transition: color 120ms linear;
+}
+
+.designName:visited {
+    color: #1a5952;
+}
+
+.designName:hover {
+    color: rgb(128, 155, 126);
+}
+
+.designText {
+    margin-right: 6px;
+    font-size: 18px;
+    color: #c0cac3;
+}
+
+.personName {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 14px;
+    margin-top: 3px;
+    transition: color 120ms linear;
+}
+
+.personName:visited {
+    color: #1a5952;
+}
+
+.personName:hover {
+    color: rgb(128, 155, 126);
 }
 
 /* ---- Navigation List Section Styles ---- */
