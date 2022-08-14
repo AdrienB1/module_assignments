@@ -130,7 +130,8 @@ a:visited {
     background-size: cover;
     background-image: url(media/contours.png), url(media/noise.png),
         url(media/gridlines.png), url(media/huntington.jpg);
-    background-size: 50%, 50%, 50%, cover;
+    background-size: 450px, 350px, 350px, cover;
+    background-repeat: repeat, repeat, repeat, no-repeat;
     background-attachment: fixed, fixed, fixed, scroll;
 }
 
@@ -470,9 +471,98 @@ ion-icon {
 
 /* ---- Navigation List Section Styles ---- */
 #navigationListBox {
-    background-color: darkkhaki;
+    background-color: rgba(138,188,159,0.5);
+    background-image: url(media/bamboo.png);
     grid-area: navList;
-    height: 200px;
+    height: auto;
 }
 
+#navigationList {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+}
 
+#navigationList > li {
+    width: 50%;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    border-top: solid 1px #a0b9ad;
+}
+
+.navigationListLink {
+    margin-left: 26%;
+    color: #1a5952;
+    font-size: 18px;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 100;
+    transition: color 120ms linear;
+}
+
+.navigationListLink:visited {
+    color: #1a5952;
+}
+
+.navigationListLink:hover {
+    color: rgb(128, 155, 126);
+}
+
+/* ---- Media Queries ---- */
+
+@media only screen and (min-width: 1100px) {
+    /* ---- Header ---- */
+    #navLinkBox {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 259px;
+        width: 33%;
+        margin: 0;
+        padding: 0;
+        background-color: rgba(33,84,95,0.3);
+    }
+
+    #headTextContainer {
+        margin-top: 25px;
+        text-align: left;
+    }
+
+    #headText {
+        font-size: 52px;
+    }
+
+    #headTextSub {
+        margin-left: 15px;
+        margin-top: 10px;
+        font-size: 30px;
+    }
+
+    #headLogo {
+        margin-top: 70px;
+        margin-left: 100px;
+        height: 120px;
+    }
+
+    #headerBox {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+    }
+
+    #navLinkBox {
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        align-items: center;
+    }
+
+    #designNextLeft {
+        display: none;
+    }
+
+    #navDiv {
+        width: 140px;
+    }
+}
