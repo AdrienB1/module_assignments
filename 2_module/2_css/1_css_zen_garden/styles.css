@@ -722,10 +722,10 @@ ion-icon {
     }
 
     .designText {
-
+        font-size: 20px;
     }
 
     .personName {
-
+        font-size: 16px;
     }
 }
