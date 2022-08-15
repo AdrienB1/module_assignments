@@ -728,4 +728,78 @@ ion-icon {
     .personName {
         font-size: 16px;
     }
+
+    /* ---------- instruction section ---------- */
+    #instructionBox {
+        height: 952px;
+    }
+
+    .instructionSub {
+        padding-left: 120px;
+        padding-right: 0;
+        color: #325050;
+        width: 50%;
+    }
+
+    #navigationListBox {
+        position: absolute;
+        top: 1371px;
+        right: 0;
+        height: 952px;
+        width: 33%;
+        background-color: rgba(138,188,159,0.22);
+        background-image: none;
+    }
+
+    #navigationList {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        width: 100%;
+    }
+    
+    #navigationList > li {
+        width: 60%;
+        height: 74px;
+        display: flex;
+        align-items: center;
+        border-top: solid 1px #a0b9ad;
+        margin-left: 60px;
+    }
+
+    #navigationList > li:first-child {
+        margin-top: 60px;
+    }
+    
+    .navigationListLink {
+        margin-left: 0;
+        color: #1a5952;
+        font-size: 22px;
+        font-family: 'Libre Franklin', sans-serif;
+        font-weight: 100;
+        transition: color 120ms linear;
+    }
+
+    /* ---------- requirements section ---------- */
+    #requirementBox {
+        height: 1021;
+    }
+
+    .requirementSub {
+        padding-left: 120px;
+        padding-right: 0;
+        color: #325050;
+        width: 50%;
+    }
+
+    #spaceFillerDiv {
+        display: block;
+        position: absolute;
+        top: 2323px;
+        right: 0;
+        height: 1021px;
+        width: 33%;
+        background-color: rgba(138,188,159,0.22);
+        background-image: none;
+    }
 }
