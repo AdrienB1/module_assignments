@@ -18,6 +18,7 @@ font-family: 'Libre Franklin', sans-serif;
     outline: 0;
     padding: 0;
     margin: 0;
+    color: #325050;
 }
 
 /* ---- Fonts ---- */
@@ -38,6 +39,12 @@ body {
 main {
     background-image: url(media/gridlines.png);
     background-repeat: repeat;
+}
+
+/* ---- Make non mobile elements invisible (adjusted in media queries below ---- */
+
+.visibleLarge {
+    display: none;
 }
 
 /* ---- Link Styles ---- */
@@ -100,7 +107,7 @@ a:visited {
 
 #authorBoxMain p span a:hover {
     text-decoration: underline;
-}dw
+}
 
 /* ---- Main Containers Positioning Mobile ---- */
 /* ---- Main container Mobile ---- */
@@ -513,15 +520,12 @@ ion-icon {
 
 @media only screen and (min-width: 1100px) {
     /* ---- Header ---- */
-    #navLinkBox {
-        position: absolute;
-        top: 0;
-        right: 0;
-        height: 259px;
-        width: 33%;
-        margin: 0;
-        padding: 0;
-        background-color: rgba(33,84,95,0.3);
+    .visibleLarge {
+        display: inline-block;
+    }
+
+    .invisibleLarge {
+        display: none;
     }
 
     #headTextContainer {
@@ -551,18 +555,118 @@ ion-icon {
         justify-content: left;
     }
 
+    /* ---------- navigation links header section ---------- */
+    .navLinkDivLarge {
+        display: inline;
+    }
+
+    .navLinkLarge {
+        display: inline;
+    }
+
     #navLinkBox {
-        display: flex;
-        flex-direction: row;
-        justify-items: center;
-        align-items: center;
+        display: block;
+        grid-area: headLink;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 259px;
+        width: 33%;
+        margin: 0;
+        padding: 0;
+        background-color: rgba(33,84,95,0.3);
     }
 
-    #designNextLeft {
-        display: none;
+    #navDivLarge {
+        background-color: rgba(255, 255, 255, 0.10);
+        display: inline;
+        height: 80px;
+        width: 60%;
+        position: absolute;
+        top: 89.5px;
+        right: 101px;
+        transition: background-color 110ms linear;
+    }
+    
+    #navDivLarge:hover {
+        background-color: rgba(255, 255, 255, 0.20);
+    }
+    
+    #navDivLarge:active {
+        background-color: rgba(255, 255, 255, 0.40);
     }
 
-    #navDiv {
-        width: 140px;
+    .navTextLarge {
+        position: absolute;
+        color: #fff;
+        font-size: 18px;
+        line-height: 80px;
+        width: 100%;
+        text-align: center;
+        opacity: 0.6;
+        transition: opacity 200ms linear;
+        display: inline;
+    }
+    
+    .navTextLarge:hover {
+        opacity: 1;
+    }
+
+    #designNextRightLarge {
+        width: 80px;
+        height: 80px;
+        right: 20px;
+        top: 89.5px;
+        position: absolute;
+        display: inline;
+        text-align: center;
+        line-height: 68px;
+        font-size: 100px;
+        color: #fff;
+        background-color: rgba(255, 255, 255, 0.10);
+        transition: background-color 110ms linear;
+        overflow: hidden;
+    }
+    
+    .opacityDivLarge {
+        opacity: 0.6;
+        height: 80px;
+        width: 80px;
+        transition: opacity 200ms linear;
+        display: inline;
+    }
+    
+    .opacityDivLarge:hover {
+        opacity: 1;
+    }
+    
+    #designNextRightLarge:hover {
+        background-color: rgba(255, 255, 255, 0.20);
+    }
+    
+    #designNextRightLarge:active {
+        background-color: rgba(255, 255, 255, 0.40);
+    }
+    
+    /* ---------- summary section ---------- */
+    .summarySub {
+        padding-left: 120px;
+        padding-right: 0;
+        width: 50%;
+    }
+
+    h3 {
+        font-family: "Julius Sans One", sans-serif;
+        margin-top: 36px;
+        font-size: 30px;
+        font-kerning: 5px;
+    }
+
+    .paragraph {
+        margin-top: 20px;
+        font-family: "Crimson Text", serif;
+        font-size: 24px;
+        line-height: 38px;
+        font-weight: 100;
     }
 }

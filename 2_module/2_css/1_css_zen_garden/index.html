@@ -31,17 +31,29 @@
                 </div>
             </header>
             <div id="navLinkBox" class="wide julius">
-                <a href="about:blank"
+                <!-- ---------- navigation links visible when wide screen ---------- -->
+                <div class="visibleLarge navLinkDivLarge">
+                    <a class="visibleLarge navLinkLarge" href="about:blank">
+                        <div id="navDivLarge">
+                            <div class="navTextLarge">VIEW ALL DESIGNS</div>
+                        </div></a>
+                    <a class="visibleLarge designNextRightLinkLarge" href="about:blank">
+                        <div id="designNextRightLarge">
+                            <div class="opacityDivLarge">&#8250;</div>
+                        </div></a>
+                </div>
+                <!-- ---------- navigation links visible when mobile screen ---------- -->
+                <a class="invisibleLarge" href="about:blank"
                     ><div id="navDiv">
                         <div class="center navText">VIEW ALL DESIGNS</div>
                     </div></a
                 >
-                <a href="about:blank"
+                <a class="invisibleLarge" href="about:blank"
                     ><div id="designNextRight">
                         <div class="opacityDiv">&#8250;</div>
                     </div></a
                 >
-                <div id="designNextLeft"></div>
+                <div class="invisibleLarge" id="designNextLeft"></div>
             </div>
             <div id="summaryBox" class="wide">
                 <div class="summaryBoxOne summarySub">
@@ -77,11 +89,13 @@
                         magna aliqua.
                     </p>
                     <p class="paragraph">
-                        Viverra accumsan in nisl nisi scelerisque eu ultrices.
+                        Viverra accumsan in nisl nisi scelerisque eu ultrices. Duis ut diam
+                        quam nulla porttitor massa id neque aliquam.
                     </p>
                     <p class="paragraph">
                         Elementum nisi quis eleifend quam adipiscing vitae proin
-                        sagittis.
+                        sagittis. Mattis vulputate enim nulla aliquet
+                        porttitor lacus luctus accumsan tortor. 
                     </p>
                 </div>
                 <div class="summaryBoxThree summarySub">
@@ -91,9 +105,7 @@
                         sed do eiusmod tempor incididunt ut labore et dolore
                         magna aliqua. Posuere lorem ipsum dolor sit amet
                         consectetur adipiscing elit. Proin nibh nisl condimentum
-                        id venenatis. Mattis vulputate enim nulla aliquet
-                        porttitor lacus luctus accumsan tortor. Duis ut diam
-                        quam nulla porttitor massa id neque aliquam.
+                        id venenatis.
                     </p>
                     <p class="paragraph">
                         Consequat mauris nunc congue nisi vitae suscipit tellus
@@ -102,14 +114,13 @@
                         Ultricies mi eget mauris pharetra. Ac ut consequat
                         semper viverra nam libero justo laoreet sit. Feugiat
                         pretium nibh ipsum consequat nisl vel pretium lectus.
-                        Enim eu turpis egestas pretium. Cursus eget nunc
-                        scelerisque viverra mauris in aliquam sem fringilla.
+                        Enim eu turpis egestas pretium.
                     </p>
                 </div>
             </div>
             <div id="instructionBox" class="wide">
                 <div class="instructionOne instructionSub">
-                    <h3 class="summaryHeaderOne">PARTICIPATION</h3>
+                    <h3 class="instructionHeaderOne">PARTICIPATION</h3>
                     <p class="paragraph">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore
@@ -159,7 +170,7 @@
                     </p>
                 </div>
                 <div class="instructionTwo instructionSub">
-                    <h3 class="summaryHeaderTwo">BENEFITS</h3>
+                    <h3 class="instructionHeaderTwo">BENEFITS</h3>
                     <p class="paragraph">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore
