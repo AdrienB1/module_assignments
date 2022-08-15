@@ -788,7 +788,7 @@ ion-icon {
 
     /* ---------- requirements section ---------- */
     #requirementBox {
-        height: 1021;
+        height: 1021px;
     }
 
     .requirementSub {
@@ -807,5 +807,53 @@ ion-icon {
         width: 33%;
         background-color: rgba(138, 188, 159, 0.22);
         background-image: none;
+    }
+}
+
+@media only screen and (min-width: 1194px) and (max-width: 1250px) {
+        #instructionBox {
+            height: 982px;
+        }
+
+        #navigationListBox {
+            height: 982px;
+        }
+
+        #requirementBox {
+            height: 1051px;
+        }
+
+        #spaceFillerDiv {
+            height: 1051px;
+            top: 2353px;
+        }
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1194px) {
+    #summaryBox {
+        height: 1311px;
+    }
+
+    #designLinksBox {
+        height: 1311px;
+    }
+    
+    #instructionBox {
+        height: 1082px;
+        top: 1571px;
+    }
+
+    #navigationListBox {
+        height: 1082px;
+        top: 1571px;
+    }
+
+    #requirementBox {
+        height: 1151px;
+    }
+
+    #spaceFillerDiv {
+        height: 1151px;
+        top: 2653px;
     }
 }
