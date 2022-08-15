@@ -321,7 +321,7 @@ h3 {
 }
 
 #instructionBox div:first-child {
-    padding-top:10px;
+    padding-top: 10px;
 }
 
 .instructionTwo {
@@ -356,7 +356,8 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: url(media/contours.png), url(media/gridlines.png), url(media/noise.png), url(media/koi.jpg);
+    background-image: url(media/contours.png), url(media/gridlines.png),
+        url(media/noise.png), url(media/koi.jpg);
     background-size: auto, auto, auto, cover;
     background-attachment: fixed, fixed, fixed, scroll;
     background-repeat: repeat, repeat, repeat, no-repeat;
@@ -369,7 +370,7 @@ h3 {
     line-height: 48px;
     font-size: 26px;
     padding: 5px;
-    font-family: 'Libre Baskerville', serif;
+    font-family: "Libre Baskerville", serif;
     font-style: italic;
     color: rgba(255, 255, 255, 0.4);
 }
@@ -385,7 +386,7 @@ h3 {
 }
 
 #socialBox a {
-    color:rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.4);
     height: 60px;
     width: 60px;
     display: flex;
@@ -419,7 +420,7 @@ ion-icon {
 
 /* ---- Designs Section Styles ---- */
 #designLinksBox {
-    background-color: #EDF4F0;
+    background-color: #edf4f0;
     grid-area: designs;
 }
 
@@ -435,7 +436,12 @@ ion-icon {
 }
 
 #designList > li:hover {
-    background-image: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%);
+    background-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.5) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
 }
 
 .itemName {
@@ -447,7 +453,7 @@ ion-icon {
 .designName {
     width: 100%;
     font-size: 18px;
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: "Libre Franklin", sans-serif;
     font-weight: 100;
     margin-bottom: 4px;
     color: #1a5952;
@@ -469,7 +475,7 @@ ion-icon {
 }
 
 .personName {
-    font-family: 'Libre Baskerville', serif;
+    font-family: "Libre Baskerville", serif;
     font-size: 14px;
     margin-top: 3px;
     transition: color 120ms linear;
@@ -485,7 +491,7 @@ ion-icon {
 
 /* ---- Navigation List Section Styles ---- */
 #navigationListBox {
-    background-color: rgba(138,188,159,0.5);
+    background-color: rgba(138, 188, 159, 0.5);
     background-image: url(media/bamboo.png);
     grid-area: navList;
     height: auto;
@@ -510,7 +516,7 @@ ion-icon {
     margin-left: 26%;
     color: #1a5952;
     font-size: 18px;
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: "Libre Franklin", sans-serif;
     font-weight: 100;
     transition: color 120ms linear;
 }
@@ -581,11 +587,11 @@ ion-icon {
         width: 33%;
         margin: 0;
         padding: 0;
-        background-color: rgba(33,84,95,0.3);
+        background-color: rgba(33, 84, 95, 0.3);
     }
 
     #navDivLarge {
-        background-color: rgba(255, 255, 255, 0.10);
+        background-color: rgba(255, 255, 255, 0.1);
         display: inline;
         height: 80px;
         width: 60%;
@@ -594,13 +600,13 @@ ion-icon {
         right: 101px;
         transition: background-color 110ms linear;
     }
-    
+
     #navDivLarge:hover {
-        background-color: rgba(255, 255, 255, 0.20);
+        background-color: rgba(255, 255, 255, 0.2);
     }
-    
+
     #navDivLarge:active {
-        background-color: rgba(255, 255, 255, 0.40);
+        background-color: rgba(255, 255, 255, 0.4);
     }
 
     .navTextLarge {
@@ -614,7 +620,7 @@ ion-icon {
         transition: opacity 200ms linear;
         display: inline;
     }
-    
+
     .navTextLarge:hover {
         opacity: 1;
     }
@@ -630,11 +636,11 @@ ion-icon {
         line-height: 68px;
         font-size: 100px;
         color: #fff;
-        background-color: rgba(255, 255, 255, 0.10);
+        background-color: rgba(255, 255, 255, 0.1);
         transition: background-color 110ms linear;
         overflow: hidden;
     }
-    
+
     .opacityDivLarge {
         opacity: 0.6;
         height: 80px;
@@ -642,19 +648,19 @@ ion-icon {
         transition: opacity 200ms linear;
         display: inline;
     }
-    
+
     .opacityDivLarge:hover {
         opacity: 1;
     }
-    
+
     #designNextRightLarge:hover {
-        background-color: rgba(255, 255, 255, 0.20);
+        background-color: rgba(255, 255, 255, 0.2);
     }
-    
+
     #designNextRightLarge:active {
-        background-color: rgba(255, 255, 255, 0.40);
+        background-color: rgba(255, 255, 255, 0.4);
     }
-    
+
     /* ---------- summary section ---------- */
     #summaryBox {
         height: 1111px;
@@ -706,7 +712,7 @@ ion-icon {
     #designList > li:first-child {
         border-top: none;
     }
-    
+
     #designList > li:hover {
         background-image: none;
     }
@@ -747,7 +753,7 @@ ion-icon {
         right: 0;
         height: 952px;
         width: 33%;
-        background-color: rgba(138,188,159,0.22);
+        background-color: rgba(138, 188, 159, 0.22);
         background-image: none;
     }
 
@@ -757,7 +763,7 @@ ion-icon {
         height: auto;
         width: 100%;
     }
-    
+
     #navigationList > li {
         width: 60%;
         height: 74px;
@@ -770,12 +776,12 @@ ion-icon {
     #navigationList > li:first-child {
         margin-top: 60px;
     }
-    
+
     .navigationListLink {
         margin-left: 0;
         color: #1a5952;
         font-size: 22px;
-        font-family: 'Libre Franklin', sans-serif;
+        font-family: "Libre Franklin", sans-serif;
         font-weight: 100;
         transition: color 120ms linear;
     }
@@ -799,7 +805,7 @@ ion-icon {
         right: 0;
         height: 1021px;
         width: 33%;
-        background-color: rgba(138,188,159,0.22);
+        background-color: rgba(138, 188, 159, 0.22);
         background-image: none;
     }
 }
