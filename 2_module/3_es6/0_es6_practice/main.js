@@ -68,10 +68,10 @@ const people = [
 ]
 
 function filterForFriendly(arr) {
-    return arr.filter(function (person) {
-        return person.friendly
-    })
+    return arr.filter(person => person.friendly)
 }
+
+console.log(filterForFriendly(people))
 
 /* 
 <><><> **Task 3** <><><> 
