@@ -135,7 +135,7 @@ const filterForDogs = arr => arr.filter(animal => animal.type === "dog")
 
 console.log(filterForDogs(animals))
 
-// <><><><><><><><><><><><><><><><><> Helpful Notes <><><><><><><><><><><><><><><><><><><>
+
 // <><><><><> Template Literals <><><><><>
 /* 
 Using template literals, write a function that takes location and name parameters and outputs a message 
@@ -148,7 +148,12 @@ formatted like this:
 These are designed for making our strings easier to read and write.
 */
 
-// <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+const welcomeString = (location, firstName) => `Hi ${firstName}! 
+Welcome to ${location}.
+I hope you ...enjoy, your stay. Please ask the supreme leader of ${location} if you need anything.`
+
+console.log(welcomeString("Imperial Prison Planet", "Luke"))
+
 // <><><><><> Templating <><><><><>
 /* 
 This special syntax is called template literals, string templates, and other similar things.
