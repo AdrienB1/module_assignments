@@ -39,10 +39,10 @@ and not starting an object, so the `:` will be an unexpected symbol.
 const carrots = ["bright orange", "ripe", "rotten"]
 
 function mapVegetables(arr) {
-    return arr.map(function (carrot) {
-        return { type: "carrot", name: carrot }
-    })
+    return arr.map(carrot => {return { type: "carrot", name: carrot }})
 }
+
+console.log(mapVegetables(carrots))
 
 /* 
 <><><> **Task 2** <><><>
