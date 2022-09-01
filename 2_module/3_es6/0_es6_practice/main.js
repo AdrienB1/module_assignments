@@ -77,7 +77,6 @@ console.log(filterForFriendly(people))
 <><><> **Task 3** <><><> 
 Re-write the following functions to be arrow functions:
 */
-
 const doMathSum = (a, b) => a + b
 console.log(doMathSum(1, 2))
 
@@ -96,6 +95,8 @@ returns a string like the following:
 **Extra Credit**
 Use template literals to build the string
 */
+const printString = (firstName="Jane", lastName="Doe", age="100") => `Hi ${firstName} ${lastName}, how does it feel to be ${age}?`
+console.log(printString())
 
 /* 
 <><><> **Task 5** <><><>
