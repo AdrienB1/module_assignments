@@ -77,13 +77,12 @@ console.log(filterForFriendly(people))
 <><><> **Task 3** <><><> 
 Re-write the following functions to be arrow functions:
 */
-function doMathSum(a, b) {
-    return a + b
-}
 
-var produceProduct = function (a, b) {
-    return a * b
-}
+const doMathSum = (a, b) => a + b
+console.log(doMathSum(1, 2))
+
+var produceProduct = (a, b) => a * b
+console.log(produceProduct(2, 3))
 
 /* 
 <><><> **Task 4** <><><>
