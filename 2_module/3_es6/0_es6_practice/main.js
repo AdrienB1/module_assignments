@@ -121,7 +121,7 @@ const animals = [
     }
 ]
 
-function filterForDogs(arr) {
+/* function filterForDogs(arr) {
     return arr.filter((animal) => {
         if (animal.type === "dog") {
             return true
@@ -129,11 +129,11 @@ function filterForDogs(arr) {
             return false
         }
     })
-}
+} */
 
+const filterForDogs = arr => arr.filter(animal => animal.type === "dog")
 
-
-
+console.log(filterForDogs(animals))
 
 // <><><><><><><><><><><><><><><><><> Helpful Notes <><><><><><><><><><><><><><><><><><><>
 // <><><><><> Template Literals <><><><><>
