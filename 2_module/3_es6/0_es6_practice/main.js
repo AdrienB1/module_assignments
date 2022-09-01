@@ -1,15 +1,18 @@
 // <><><><> **`let` and `const`** <><><><>
 /*
-Replace all the `var`s with `let` and `const`. Alter the code however necessary to make sure this continues to work (so the pet's name **isn't** `"John"`, but instead `"spot"` is returned). You only need to delete `var` and insert `let` and `const` John is the pet owner, and his name should be stored differently than the other names.
+Replace all the `var`s with `let` and `const`. Alter the code however necessary to make sure this 
+continues to work (so the pet's name **isn't** `"John"`, but instead `"spot"` is returned). 
+You only need to delete `var` and insert `let` and `const` John is the pet owner, 
+and his name should be stored differently than the other names.
 */
-var name = "John"
-var age = 101
+const name = "John"
+const age = 101
 
 function runForLoop(pets) {
-    var petObjects = []
+    const petObjects = []
     for (var i = 0; i < pets.length; i++) {
-        var pet = { type: pets[i] }
-        var name
+        let pet = { type: pets[i] }
+        let name = ""
         if (pets[i] === "cat") {
             name = "fluffy"
         } else {
@@ -30,7 +33,8 @@ runForLoop(["cat", "dog"])
 /* 
 <><><> **Task 1** <><><>
 Re-write this `.map()` using an arrow function:
-Be aware that if JavaScript sees a `{` directly after the `=>` it will think it's starting a function, and not starting an object, so the `:` will be an unexpected symbol.
+Be aware that if JavaScript sees a `{` directly after the `=>` it will think it's starting a function, 
+and not starting an object, so the `:` will be an unexpected symbol.
 */
 const carrots = ["bright orange", "ripe", "rotten"]
 
@@ -83,7 +87,8 @@ var produceProduct = function (a, b) {
 
 /* 
 <><><> **Task 4** <><><>
-Write a `printString` function that takes `firstName`, `lastName`, and `age` as parameters and returns a string like the following:
+Write a `printString` function that takes `firstName`, `lastName`, and `age` as parameters and 
+returns a string like the following:
 
  > Hi Kat Stark, how does it feel to be 40?
 
@@ -133,7 +138,8 @@ function filterForDogs(arr) {
 // <><><><><><><><><><><><><><><><><> Helpful Notes <><><><><><><><><><><><><><><><><><><>
 // <><><><><> Template Literals <><><><><>
 /* 
-Using template literals, write a function that takes location and name parameters and outputs a message formatted like this:
+Using template literals, write a function that takes location and name parameters and outputs a message 
+formatted like this:
 
 > Hi Janice!
 > Welcome to Hawaii.
@@ -146,19 +152,22 @@ These are designed for making our strings easier to read and write.
 // <><><><><> Templating <><><><><>
 /* 
 This special syntax is called template literals, string templates, and other similar things.
-They utilize the "back tick." This symbol -> `. It's just left of the "1" on your keyboard. We put our entire string inside two back ticks, and we use a dollar sign and curly brackets to insert JavaScript variables and expressions into.
-We used to concatenate strings like so:
+They utilize the "back tick." This symbol -> `. It's just left of the "1" on your keyboard. 
+We put our entire string inside two back ticks, and we use a dollar sign and curly brackets to 
+insert JavaScript variables and expressions into.
 
+We used to concatenate strings like so:
 > let name = "Jacob";
 > let age = 20;
 > console.log("hello, my name is " + name + " and I am " + age + " years old.");
 
 but now we can use the following syntax:
-
 > console.log(`hello, my name is ${name} and I am ${age} years old.`);
 
-This is easier to read and write, we can easily identify where the JavaScript variables are, and it takes up less room. All those quotes and "+"s in the old way are way to easy to mess up. Start using the ES6 way!
-You can also insert JavaScript expressions into the curly brackets.
 
+This is easier to read and write, we can easily identify where the JavaScript variables are, and it takes up less room. 
+All those quotes and "+"s in the old way are way to easy to mess up. Start using the ES6 way!
+
+You can also insert JavaScript expressions into the curly brackets.
 > console.log(`hello, my name is ${name}. Next year, I will be ${age + 1} years old`);
 */
