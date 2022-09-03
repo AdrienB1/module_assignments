@@ -2,11 +2,11 @@
 /* Use the <Rest Operator> to help this function return an array of animals, 
 no matter how many animals are passed to it: */
 
-function collectAnimals(/*your code here*/) {
-    /*and here*/
+function collectAnimals(...animals) {
+    return animals
 }
 
-collectAnimals("dog", "cat", "mouse", "jackolope", "platypus");
+console.log(collectAnimals("ferret", "tiger", "great dane", "ladybug", "perry the platypus"))
 // ["dog", "cat", "mouse", "jackolope", "platypus"]
 
 //<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
@@ -21,6 +21,7 @@ function combineFruit(fruit, sweets, vegetables){
     return {}
 }
 
+/* 
 combineFruit(["apple", "pear"],
              ["cake", "pie"],
              ["carrot"])
@@ -28,7 +29,8 @@ combineFruit(["apple", "pear"],
         fruit: ["apple", "pear"],
         sweets: ["cake", "pie"],
         vegetables: ["carrot"]
-     }
+     } 
+*/
 
 //<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 
