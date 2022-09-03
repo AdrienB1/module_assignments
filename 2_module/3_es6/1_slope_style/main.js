@@ -1,4 +1,3 @@
-
 /* Use the <Rest Operator> to help this function return an array of animals, 
 no matter how many animals are passed to it: */
 
@@ -6,8 +5,15 @@ function collectAnimals(...animals) {
     return animals
 }
 
-console.log(collectAnimals("ferret", "tiger", "great dane", "ladybug", "perry the platypus"))
-// ["dog", "cat", "mouse", "jackolope", "platypus"]
+console.log(
+    collectAnimals(
+        "ferret",
+        "tiger",
+        "great dane",
+        "ladybug",
+        "perry the platypus"
+    )
+)
 
 //<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 
@@ -15,38 +21,27 @@ console.log(collectAnimals("ferret", "tiger", "great dane", "ladybug", "perry th
 You'll use an ES6 shorthand syntax that becomes useful when a variable name is 
 mentioned twice in both the name and value of properties in your object: */
 
-//Hint - { item } is shorthand for { item: item }
-
-function combineFruit(fruit, sweets, vegetables){
-    return {}
+function combineFruit(fruits, sweets, vegetables) {
+    return {fruits, sweets, vegetables}
 }
 
-/* 
-combineFruit(["apple", "pear"],
-             ["cake", "pie"],
-             ["carrot"])
-//=> {
-        fruit: ["apple", "pear"],
-        sweets: ["cake", "pie"],
-        vegetables: ["carrot"]
-     } 
-*/
+console.log(combineFruit(["banana", "orange"], ["scone", "pie"], ["tomato"]))
 
 //<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 
 /* Use destructuring to use the property names as variables. 
 Destructure the object in the parameter: */
 
-//Hint - This function is expecting two variables to be defined in the parameter list. 
+//Hint - This function is expecting two variables to be defined in the parameter list.
 
-function parseSentence(_________){
+function parseSentence(_________) {
     return `We're going to have a good time in ${location} for ${duration}`
-  }
-  
-  parseSentence({
+}
+
+parseSentence({
     location: "Burly Idaho",
     duration: "2 weeks"
-  });
+})
 
 //<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 
@@ -56,8 +51,8 @@ function parseSentence(_________){
 // does the same thing as:
 // const varIMakeUpRightHereForTheFirstItemInTheArray = arr[0]
 
-function returnFirst(items){
-    const firstItem = items[0]; /*change this line to be es6*/
+function returnFirst(items) {
+    const firstItem = items[0] /*change this line to be es6*/
     return firstItem
 }
 
@@ -66,11 +61,24 @@ function returnFirst(items){
 /* Write destructuring code to assign variables that will help us return 
 the expected string. Also, change the string to be using Template literals: */
 
-const favoriteActivities = ["magnets", "snowboarding", "philanthropy", "janitor work", "eating"];
+const favoriteActivities = [
+    "magnets",
+    "snowboarding",
+    "philanthropy",
+    "janitor work",
+    "eating"
+]
 
-function returnFavorites(arr){
+function returnFavorites(arr) {
     /*your code here*/
-    return "My top three favorite activities are, " + firstFav + ", " + secondFav + ", and " + thirdFav;
+    return (
+        "My top three favorite activities are, " +
+        firstFav +
+        ", " +
+        secondFav +
+        ", and " +
+        thirdFav
+    )
 }
 
 returnFavorites(favoriteActivities)
@@ -81,15 +89,13 @@ returnFavorites(favoriteActivities)
 and return one array. You will need to change how the arrays are passed in. 
 You may write it assuming you will always recieve three arrays if you would like to. */
 
-function combineAnimals() {
+function combineAnimals() {}
 
-}
+const realAnimals = ["dog", "cat", "mouse"]
+const magicalAnimals = ["jackolope"]
+const mysteriousAnimals = ["platypus"]
 
-const realAnimals = ["dog", "cat", "mouse"];
-const magicalAnimals = ["jackolope"];
-const mysteriousAnimals = ["platypus"];
-
-combineAnimals(realAnimals, magicalAnimals, mysteriousAnimals);
+combineAnimals(realAnimals, magicalAnimals, mysteriousAnimals)
 
 // ["dog", "cat", "mouse", "jackolope", "platypus"]
 
@@ -98,30 +104,29 @@ combineAnimals(realAnimals, magicalAnimals, mysteriousAnimals);
 /* Try to make the following function more ES6y: */
 
 function product(a, b, c, d, e) {
-    var numbers = [a,b,c,d,e];
-  
-    return numbers.reduce(function(acc, number) {
-      return acc * number;
-    }, 1)
-  }
+    var numbers = [a, b, c, d, e]
 
-  
+    return numbers.reduce(function (acc, number) {
+        return acc * number
+    }, 1)
+}
+
 //<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 
 /* Make the following function more ES6y. Use at least both the rest and spread operators: */
 
 function unshift(array, a, b, c, d, e) {
-    return [a, b, c, d, e].concat(array);
-  }
+    return [a, b, c, d, e].concat(array)
+}
 
 //<><><><><><><><><><><><><><><><><><><><><><> Double Black Diamond Section <><><><><><><><><><><><><><><><><><><>
 
 /* Write some destructuring code to help this function out. Use the ES6 shorthand that 
 helps make the syntax look less redundant to simplify it: */
 
-function populatePeople(names){
-    return names.map(function(name){
-        name = name.split(" ");
+function populatePeople(names) {
+    return names.map(function (name) {
+        name = name.split(" ")
         // your code
         return {
             firstName: firstName,
