@@ -34,14 +34,13 @@ Destructure the object in the parameter: */
 
 //Hint - This function is expecting two variables to be defined in the parameter list.
 
-function parseSentence(_________) {
-    return `We're going to have a good time in ${location} for ${duration}`
-}
+const parseSentence = ({location, duration}) => `We're going to have a good time in ${location} for ${duration}`
 
-parseSentence({
-    location: "Burly Idaho",
-    duration: "2 weeks"
-})
+console.log(
+    parseSentence({
+        location: "New Zealand",
+        duration: "1 month"
+    }))
 
 //<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 
@@ -51,10 +50,14 @@ parseSentence({
 // does the same thing as:
 // const varIMakeUpRightHereForTheFirstItemInTheArray = arr[0]
 
+const itemsArray = ["potion", "cool sword", "blue hat"]
+
 function returnFirst(items) {
-    const firstItem = items[0] /*change this line to be es6*/
+    const [firstItem] = items /*change this line to be es6*/
     return firstItem
 }
+
+console.log(returnFirst(itemsArray))
 
 //<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 
@@ -62,26 +65,19 @@ function returnFirst(items) {
 the expected string. Also, change the string to be using Template literals: */
 
 const favoriteActivities = [
-    "magnets",
-    "snowboarding",
-    "philanthropy",
-    "janitor work",
+    "writing",
+    "playing games",
+    "drawing",
+    "sleeping",
     "eating"
 ]
 
 function returnFavorites(arr) {
-    /*your code here*/
-    return (
-        "My top three favorite activities are, " +
-        firstFav +
-        ", " +
-        secondFav +
-        ", and " +
-        thirdFav
-    )
+    const [firstFav, secondFav, thirdFav] = arr
+    return `My top three favorite activities are, ${firstFav}, ${secondFav}, and ${thirdFav}`
 }
 
-returnFavorites(favoriteActivities)
+console.log(returnFavorites(favoriteActivities))
 
 //<><><><><><><><><><><><><><><><><><><><><><> Blue Square Section <><><><><><><><><><><><><><><><><><><><><><><>
 
