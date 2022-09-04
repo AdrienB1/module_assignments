@@ -105,13 +105,11 @@ console.log(combineAnimals(realAnimals, magicalAnimals, mysteriousAnimals))
 
 /* Try to make the following function more ES6y: */
 
-function product(a, b, c, d, e) {
-    var numbers = [a, b, c, d, e]
-
-    return numbers.reduce(function (acc, number) {
-        return acc * number
-    }, 1)
+function myProduct(...numbers) {
+    return numbers.reduce((acc, number) => acc * number, 1)
 }
+
+console.log(myProduct(1, 2, 2, 2))
 
 //<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 
