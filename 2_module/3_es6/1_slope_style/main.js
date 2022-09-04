@@ -119,6 +119,15 @@ function unshift(array, a, b, c, d, e) {
     return [a, b, c, d, e].concat(array)
 }
 
+const shiftArray = ["aurora", "pudge", "mr. mittens"]
+
+const myUnshift = (array, ...inputs) => {
+    let newArr = [...array, ...inputs]
+    return newArr
+}
+
+console.log(myUnshift(shiftArray, "eva", "wally", 1, 2, 3, 4))
+
 //<><><><><><><><><><><><><><><><><><><><><><> Double Black Diamond Section <><><><><><><><><><><><><><><><><><><>
 
 /* Write some destructuring code to help this function out. Use the ES6 shorthand that 
