@@ -134,13 +134,17 @@ console.log(myUnshift(shiftArray, "eva", "wally", 1, 2, 3, 4))
 helps make the syntax look less redundant to simplify it: */
 
 function populatePeople(names) {
-    return names.map(name => {
+    const result = names.map(name => {
         name = name.split(" ")
-        let person = name.forEach((firstName, lastName) => {
-            return {firstName, lastName}
-        })
-        return person
+        const [itemOne, itemTwo] = name
+        const firstName = itemOne
+        const lastName = itemTwo
+        return {
+            firstName,
+            lastName
+        }
     })
+    return result
 }
 
 console.log(populatePeople(["Frank Peterson", "Suzy Degual", "Liza Jones"]))
