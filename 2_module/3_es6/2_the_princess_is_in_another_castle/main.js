@@ -36,30 +36,70 @@ class Player {
         this.hasStar = hasStar
     }
     setName(namePicked) {
-        this.name = namePicked
+        if (namePicked === "Mario") {
+            this.name = "Mario"
+        } else if (namePicked === "Luigi") {
+            this.name = "Luigi"
+        }
     }
 
     gotHit() {
-
+        if (this.hasStar == false) {
+            if (this.status == "Powered Up") {
+                this.status = "Big"
+            } else if (this.status == "Big") {
+                this.status = "Small"
+            } else {
+                this.status = "Dead"
+            }
+        } else {
+            this.status = "Powered Up"
+            console.log("Your Star protected you!")
+        }
     }
 
     getPowerup() {
-
+        if (this.status == "Powered Up") {
+            this.hasStar = true
+        } else if (this.status == "Big") {
+            this.status = "Powered Up"
+        } else {
+            this.status = "Big"
+        }
     }
 
     addCoin() {
-
+        this.totalCoins++
     }
 
     print() {
-
+        if (this.status !== "Dead") {
+            if (this.hasStar == false) {
+                console.log(
+                    `Name: ${this.name}
+                    Total Coins: ${this.totalCoins}
+                    Status: ${this.status}
+                    You have no Star, sad :(`
+                )
+            } else {
+                console.log (
+                    `Name: ${this.name}
+                    Total Coins: ${this.totalCoins}
+                    Status: ${this.status}
+                    You have a Star! Yes!`
+                )
+            }
+        } else {
+            console.log (
+                `You have died!
+                Name: ${this.name}
+                Total Coins: ${this.totalCoins}
+                Status: ${this.status}
+                Your final score is: ${this.totalCoins}`
+            )
+        }
     }
 }
 
 var playerOne = new Player("Mario", 0, "Powered Up", false)
 
-console.log(playerOne)
-
-playerOne.setName("Luigi")
-
-console.log(playerOne)
