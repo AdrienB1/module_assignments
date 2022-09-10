@@ -77,27 +77,25 @@ class Player {
     print() {
         if (this.status !== "Dead") {
             if (this.hasStar == false) {
-                console.log(
-`Name: ${this.name}
-Total Coins: ${this.totalCoins}
-Status: ${this.status}
-You have no Star, sad :(`
-                )
+                console.log(`Name: ${this.name}`)
+                console.log(`Total Coins: ${this.totalCoins}`)
+                console.log(`Status: ${this.status}`)
+                console.log(`You have no Star, sad :(`)
             } else {
                 console.log(
-`Name: ${this.name}
-Total Coins: ${this.totalCoins}
-Status: ${this.status}
-You have a Star! Yes!`
+                    `Name: ${this.name}
+                    Total Coins: ${this.totalCoins}
+                    Status: ${this.status}
+                    You have a Star! Yes!`
                 )
             }
         } else {
             console.log(
-`You have died!
-Name: ${this.name}
-Total Coins: ${this.totalCoins}
-Status: ${this.status}
-Your final score is: ${this.totalCoins}`
+                `You have died!
+                Name: ${this.name}
+                Total Coins: ${this.totalCoins}
+                Status: ${this.status}
+                Your final score is: ${this.totalCoins}`
             )
         }
     }
@@ -109,6 +107,10 @@ function rngesus(min = 0, max = 3) {
     min = Math.ceil(min)
     max = Math.floor(max)
     return Math.floor(Math.random() * (max - min + 1)) + min
+}
+
+const clearMyInterval = () => {
+    clearInterval(bestInterval)
 }
 
 function playFlow(player) {
@@ -125,11 +127,10 @@ function playFlow(player) {
             player.print()
         }
     } else {
-        player.print()
-        clearInterval(bestInterval)
+        clearMyInterval()
     }
 }
 
 //bestInterval = setInterval(playFlow(playerOne), 1000)
 
-console.log(playFlow(playerOne))
+console.log(playerOne)
