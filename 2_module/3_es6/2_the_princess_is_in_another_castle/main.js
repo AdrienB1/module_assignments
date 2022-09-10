@@ -27,3 +27,39 @@ Then call the print method on the object.
 
 Now put the random range function inside a `setInterval` function that ends after the player is dead
 */
+
+class Player {
+    constructor(name, totalCoins=0, status="Powered Up", hasStar=false) {
+        this.name = name
+        this.totalCoins = totalCoins
+        this.status = status
+        this.hasStar = hasStar
+    }
+    setName(namePicked) {
+        this.name = namePicked
+    }
+
+    gotHit() {
+
+    }
+
+    getPowerup() {
+
+    }
+
+    addCoin() {
+
+    }
+
+    print() {
+
+    }
+}
+
+var playerOne = new Player("Mario", 0, "Powered Up", false)
+
+console.log(playerOne)
+
+playerOne.setName("Luigi")
+
+console.log(playerOne)
