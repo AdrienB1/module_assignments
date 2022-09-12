@@ -47,25 +47,34 @@ class Player {
         if (this.hasStar == false) {
             if (this.status == "Powered Up") {
                 this.status = "Big"
+                console.log(" - You got hit! Oh no!")
             } else if (this.status == "Big") {
                 this.status = "Small"
+                console.log(" - You got hit! Oh no!")
             } else {
                 this.status = "Dead"
             }
         } else {
             this.status = "Powered Up"
+            this.hasStar = false
             console.log(" - Your Star protected you!")
         }
     }
 
     getPowerup() {
         if (this.status == "Powered Up") {
-            this.hasStar = true
-            console.log(" - You got a Star!")
+            if (this.hasStar == false) {
+                this.hasStar = true
+                console.log(" - You got a Star!")
+            } else {
+                console.log(" - You got a Power Up, but you already have a Star!")
+            }
         } else if (this.status == "Big") {
             this.status = "Powered Up"
+            console.log(" - You got a Power Up!")
         } else {
             this.status = "Big"
+            console.log(" - You got a Power Up!")
         }
     }
 
@@ -81,22 +90,20 @@ class Player {
                 console.log(`Total Coins: ${this.totalCoins}`)
                 console.log(`Status: ${this.status}`)
                 console.log(`You have no Star, sad :(`)
+                console.log("")
             } else {
-                console.log(
-                    `Name: ${this.name}
-                    Total Coins: ${this.totalCoins}
-                    Status: ${this.status}
-                    You have a Star! Yes!`
-                )
+                console.log(`Name: ${this.name}`)
+                console.log(`Total Coins: ${this.totalCoins}`)
+                console.log(`Status: ${this.status}`)
+                console.log(`You have a Star! Yay!`)
+                console.log("")
             }
         } else {
-            console.log(
-                `You have died!
-                Name: ${this.name}
-                Total Coins: ${this.totalCoins}
-                Status: ${this.status}
-                Your final score is: ${this.totalCoins}`
-            )
+            console.log("You have died!")
+            console.log(`Name: ${this.name}`)
+            console.log(`Total Coins: ${this.totalCoins}`)
+            console.log(`Status: ${this.status}`)
+            console.log(`Your final score is: ${this.totalCoins}`)
         }
     }
 }
@@ -109,9 +116,7 @@ function rngesus(min = 0, max = 3) {
     return Math.floor(Math.random() * (max - min + 1)) + min
 }
 
-const clearMyInterval = () => {
-    clearInterval(bestInterval)
-}
+
 
 function playFlow(player) {
     if (player.status !== "Dead") {
@@ -127,10 +132,8 @@ function playFlow(player) {
             player.print()
         }
     } else {
-        clearMyInterval()
+        clearInterval(bestInterval)
     }
 }
 
-//bestInterval = setInterval(playFlow(playerOne), 1000)
-
-console.log(playerOne)
+bestInterval = setInterval(() => playFlow(playerOne), 1000)
